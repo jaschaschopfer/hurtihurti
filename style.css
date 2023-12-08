@@ -7,23 +7,40 @@
     text-decoration: none;
   }
 
+  h2 {
+    font-style: bold;
+    font-size: 25px;
+  }
+
 body{
 background-color: white;
 color: black;
-
 }
 
-header{
-    background-color: black;
-    color: white;
-    padding: 20 px;
-    text-align: center;
-    height: 70px;
-    
+.headerbildundlogo {
+  position: relative;
+}
+
+.headerbild {
+  width: 100%;
+}
+
+.headerlogo {
+  height: 25%;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+#iconwarenkorbheader {
+  height: 1em;
 }
 
 nav {
-    height: 100%;
+    background-color: #191919;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 .nav_links {
@@ -32,34 +49,77 @@ nav {
     justify-content: flex-end;
     /* Verteilung */
     align-content: center;
-    flex-wrap: wrap;
     /* Umbruch, wenn zu wenig Platz*/
+    flex-wrap: wrap;
+    gap: 10px;
     list-style: none;
     /* Keine Aufführungspunkte*/
-    padding: 0;
+    padding: 0px;
     /* Kein Padding für die ganze Leiste*/
     margin: 0px;
     /* Keine Margin für die ganze Leiste*/
     height: 100%;
   }
 
-  .menüpunkt {
-    margin-left: 80px;
-  }
+
+.menüpunkt {
+  margin-left: 10px;
+}
 
 
-  .teaser-shop {
-    display: flex;
-    position: center;
-    margin: 40px;
-  }
 
-  .teaser-shop-artikel {
-    width: 33%;
-  }
+/* evtl. dann für Desktop ansicht relevant */
+/* .teaser-shop {
+  display: flex;
+  position: center;
+  margin: 40px;
+  width: 100%;
+
+} */
+
+.teaser-shop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.teaser-shop {
+  margin-top: 10px;
+}
+
+.teaser-shop-artikel {
+  background-color: #191919;
+}
+
+.titelpreis {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+
+.titelpreis p {
+  font-size: 18px;
+}
+
+.artikelbeschreibung {
+  margin: 5%;
+}
+
+/*
+.teaser-shop-artikel {
+  width: 33%;
+} */
   
-  .teaser-shop-artikel-bild {
-    object-fit: cover;
-  /*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
+.teaser-shop-artikel-bild {
+  object-fit: cover;
+  width: 100%;
+/*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
   }
 
+.iconwarenkorbshopteaser {
+  height: 1em;
+  float: right;
+  margin: 5%;
+}
