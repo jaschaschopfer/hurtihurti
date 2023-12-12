@@ -1,3 +1,10 @@
+:root{
+   --color-main-bg: white;
+   --color-main-font: black;
+   --margin-XL: 20px;
+   font-family: FRWAEGEN!!;
+}
+
 * {
     font-family: Komet;
     font-style: italic;
@@ -7,13 +14,13 @@
     text-decoration: none;
   }
 
-  h2 {
-    font-style: bold;
-    font-size: 25px;
-  }
+h2 {
+  font-style: bold;
+  font-size: 25px;
+}
 
 body{
-background-color: white;
+background-color: var(--color-main-bg);
 color: black;
 }
 
@@ -33,7 +40,7 @@ color: black;
 }
 
 #iconwarenkorbheader {
-  height: 1em;
+  height: 1rem;
 }
 
 nav {
@@ -91,17 +98,9 @@ nav {
   background-color: #191919;
 }
 
-.titelpreis {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5%;
-}
-
-.titelpreis p {
+/* .titelpreis p {
   font-size: 18px;
-}
+} */
 
 .artikelbeschreibung {
   margin: 5%;
@@ -113,13 +112,21 @@ nav {
 } */
   
 .teaser-shop-artikel-bild {
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
 /*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
   }
 
+.titelpreis {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+
 .iconwarenkorbshopteaser {
-  height: 1em;
+  height: 1rem;
   float: right;
   margin: 5%;
 }
