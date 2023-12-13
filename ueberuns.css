@@ -7,8 +7,10 @@
 
 
 :root{
-    --color-main-bg: rgb(239, 235, 235);
-    --color-main-font: black;
+    --color-main-bg: F2F2F2;
+    --color-schwarz: #191919;
+    --color-gelb: #E5B100;
+    --color-weiss-auf-schwarz: rgb(255, 255, 255);
     --font-size-basis: 16px
 }
 
@@ -54,11 +56,31 @@ body{
     background-color: var(--color-main-bg);
     color: black;
     margin: 80px;
+
     }
 
 .vorstellung {
-
-    
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+
+.intro {
+    width: 33%;
+}
+
+.portrait {
+    width: 33%;
+    object-fit: cover;
+}
+
+.person {
+    background-color: var(--color-schwarz);
+    color: var(--color-weiss-auf-schwarz);
+    width: 33%;
+}
+
+
+
 
