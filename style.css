@@ -1,8 +1,20 @@
 :root{
-   --color-main-bg: white;
-   --color-main-font: black;
-   --margin-XL: 20px;
-   font-family: FRWAEGEN!!;
+   --margin-S: 10px;
+   --margin-M: 15px;
+   --margin-L: 20px;
+   --margin-XL: 25px;
+   --gap-S: 10px;
+   --color-black: #191919;
+   --padding-L: 20px;
+   --font-size-h1: 3.33rem;
+   --font-size-h2: 2.22rem;
+   --font-size-h3: 1.39rem;
+   --font-size-h4: 1.39rem;
+   --font-size-default: 1rem;
+   --font-size-small: 0.77rem;
+   --font-size-button-L: 1.39rem;
+   --font-size-button-S: 1.11rem;
+
 }
 
 * {
@@ -10,18 +22,17 @@
     font-style: italic;
     font-size: 18px;
     color: #F4F4F4;
-  
     text-decoration: none;
+  }
+
+body{
+  background-color: white;
+  color: black;
   }
 
 h2 {
   font-style: bold;
-  font-size: 25px;
-}
-
-body{
-background-color: var(--color-main-bg);
-color: black;
+  font-size: var(--font-size-h2);
 }
 
 .headerbildundlogo {
@@ -33,20 +44,16 @@ color: black;
 }
 
 .headerlogo {
-  height: 25%;
+  height: 40%;
   position: absolute;
   bottom: 10%;
   left: 5%;
 }
 
-#iconwarenkorbheader {
-  height: 1rem;
-}
-
 nav {
-    background-color: #191919;
+    background-color: var(--color-black);
     color: white;
-    padding: 20px;
+    padding: var(--padding-L);
     text-align: center;
 }
 
@@ -58,7 +65,7 @@ nav {
     align-content: center;
     /* Umbruch, wenn zu wenig Platz*/
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--gap-S);
     list-style: none;
     /* Keine Aufführungspunkte*/
     padding: 0px;
@@ -70,7 +77,12 @@ nav {
 
 
 .menüpunkt {
-  margin-left: 10px;
+  margin-left: var(--margin-S);
+  font-size: var(--font-size-h3);
+}
+
+#iconwarenkorbheader {
+  height: var(--font-size-h3);
 }
 
 
@@ -87,23 +99,31 @@ nav {
 .teaser-shop {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap-S);
 }
 
 .teaser-shop {
-  margin-top: 10px;
+  margin-top: var(--margin-S);
 }
 
 .teaser-shop-artikel {
-  background-color: #191919;
+  background-color: var(--color-black);
 }
 
 /* .titelpreis p {
   font-size: 18px;
 } */
 
+.titelpreis {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--margin-L);
+}
+
 .artikelbeschreibung {
-  margin: 5%;
+  margin: var(--margin-L);
 }
 
 /*
@@ -117,16 +137,8 @@ nav {
 /*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
   }
 
-.titelpreis {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5%;
-}
-
 .iconwarenkorbshopteaser {
-  height: 1rem;
+  height: var(--font-size-h3);
   float: right;
-  margin: 5%;
+  margin: var(--margin-L);
 }
