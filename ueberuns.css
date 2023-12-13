@@ -7,7 +7,7 @@
 
 
 :root {
-    --color-main-bg: F2F2F2;
+    --color-main-bg: #F2F2F2;
     --color-schwarz: #191919;
     --color-gelb: #E5B100;
     --color-weiss-auf-schwarz: rgb(255, 255, 255);
@@ -52,23 +52,28 @@ h6 {
     font-size: 0.875rem;
 }
 
-.logo { 
-    width: 33%;
+.logo {
+    width: 90%;
 }
 
 #iconwarenkorbheader {
     height: 1rem;
 }
 
-nav {
-    background-color: var(--color-schwarz);
-    color: var(--color-weiss-auf-schwarz);
-    padding: 20px;
-    text-align: left;
+.header {
+    display: flex;
 }
 
-.nav_links {
-    width: 50%;
+.navigation {
+    color: var(--color-weiss-auf-schwarz);
+    padding: 20px;
+    padding-top: 0;
+    text-align: left;
+
+    flex: 1 0 auto;
+}
+
+.nav_inhalt {
     display: flex;
     /* Auflistung horizontal */
     justify-content: flex-end;
@@ -86,11 +91,10 @@ nav {
     height: 100%;
 }
 
-
 .menüpunkt {
     margin-left: 10px;
+    color: var(--color-schwarz);
 }
-
 
 body {
     background-color: var(--color-main-bg);
