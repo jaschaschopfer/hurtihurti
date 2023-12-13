@@ -4,8 +4,10 @@
    --margin-L: 20px;
    --margin-XL: 25px;
    --gap-S: 10px;
-   --color-black: #191919;
-   --padding-L: 20px;
+   --padding-L: 10px;
+   --border-s: 0.1rem solid var(--color-black);
+
+   /* für mobile definieren! diese grössen gelten für desktop */
    --font-size-h1: 3.33rem;
    --font-size-h2: 2.22rem;
    --font-size-h3: 1.39rem;
@@ -15,7 +17,35 @@
    --font-size-button-L: 1.39rem;
    --font-size-button-S: 1.11rem;
 
+   --color-black: #191919;
+   --color-orange: #E5B100;
+
 }
+
+/* root kopie für desktop.
+:root{
+  dies sind die margins bei mobile, für desktop noch anpassen.
+  --margin-S: 10px;
+  --margin-M: 15px;
+  --margin-L: 20px;
+  --margin-XL: 25px;
+  --gap-S: 10px;
+  --padding-L: 20px;
+
+dies sind die korrekten grössen für desktop
+  --font-size-h1: 3.33rem;
+  --font-size-h2: 2.22rem;
+  --font-size-h3: 1.39rem;
+  --font-size-h4: 1.39rem;
+  --font-size-default: 1rem;
+  --font-size-small: 0.77rem;
+  --font-size-button-L: 1.39rem;
+  --font-size-button-S: 1.11rem;
+
+  color bleibt bei desktop gleich
+  --color-black: #191919;
+
+} */
 
 * {
     font-family: Komet;
@@ -41,6 +71,8 @@ h2 {
 
 .headerbild {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .headerlogo {
@@ -49,6 +81,18 @@ h2 {
   bottom: 10%;
   left: 5%;
 }
+
+/* Masse für Logo auf Desktop:
+.headerbild {
+  width: 100%;
+}
+
+.headerlogo {
+  height: 25%;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+} */
 
 nav {
     background-color: var(--color-black);
@@ -64,6 +108,7 @@ nav {
     /* Verteilung */
     align-content: center;
     /* Umbruch, wenn zu wenig Platz*/
+    align-items: center;
     flex-wrap: wrap;
     gap: var(--gap-S);
     list-style: none;
@@ -97,14 +142,12 @@ nav {
 } */
 
 .teaser-shop {
+  margin-top: var(--margin-L);
   display: flex;
   flex-direction: column;
   gap: var(--gap-S);
 }
 
-.teaser-shop {
-  margin-top: var(--margin-S);
-}
 
 .teaser-shop-artikel {
   background-color: var(--color-black);
@@ -120,6 +163,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: var(--margin-L);
+}
+
+.titelpreis p {
+  font-size: var(--font-size-h3);
 }
 
 .artikelbeschreibung {
@@ -142,3 +189,77 @@ nav {
   float: right;
   margin: var(--margin-L);
 }
+
+.teaser-gross {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--color-black);
+  margin-top: var(--margin-L);
+}
+
+.teaser-gross-textbox {
+  margin: var(--margin-L);
+  position: relative;
+}
+
+.teaser-gross img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.buttongross {
+  float: right;
+  margin-top: var(--margin-S);
+  background-color: var(--color-orange);
+  padding: var(--padding-L);
+  color: var(--color-black);
+}
+
+.usp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--margin-L);
+  border-top: var(--border-s);
+  border-bottom: var(--border-s);
+  padding: var(--padding-L);
+}
+
+.usp p {
+  color: var(--color-black);
+}
+
+.social-wall {
+  padding: var(--padding-L);
+}
+
+.social-wall h2{
+  color: var(--color-black);
+}
+
+.buttongross-center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttongross-center {
+  margin-top: var(--margin-S);
+  background-color: var(--color-orange);
+  padding: var(--padding-L);
+  color: var(--color-black);
+}
+
+.teaser-gross-inverted {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--color-black);
+  margin-top: var(--margin-L);
+}
+
+.testimonial h2{
+  color: var(--color-black);
+}
+
+
