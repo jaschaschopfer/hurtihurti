@@ -1,0 +1,54 @@
+:root {
+
+    --color-main-bg: rgb(239, 235, 235);
+    --color-main-font: black;
+    --margin-XL: 16px;
+
+}
+
+* {
+    font-family: Komet;
+    font-style: italic;
+    font-size: 1.125rem;
+    color: #191919;
+
+    text-decoration: none;
+
+}
+
+.kontakt {
+
+    background-color: rgb(239, 235, 235)
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.kontakt h2 {
+    margin-bottom: 10px;
+    color: #191919;
+    
+}
+
+.kontakt ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.kontakt ul li {
+
+    margin-bottom: 8px;
+
+}
+
+.kontakt ul li strong {
+
+    display: inline-block;
+    width: 80px;
+
+}
+
+
+
