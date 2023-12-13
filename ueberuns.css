@@ -52,6 +52,12 @@ h6 {
     font-size: 0.875rem;
 }
 
+p {
+    font-style: small;
+    font-size: 0.875rem;
+
+}
+
 .logo {
     width: 90%;
 }
@@ -134,4 +140,86 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+.logo-footer {
+    width: 20%;
+}
+
+.shop-warenkorb {
+    color: var(--color-gelb);
+    
+    display: flex;
+    /* Auflistung horizontal */
+    justify-content: flex-end;
+    /* Verteilung */
+    align-content: center;
+    /* Umbruch, wenn zu wenig Platz*/
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    /* Keine Aufführungspunkte*/
+    padding: 0px;
+    /* Kein Padding für die ganze Leiste*/
+    margin: 0px;
+    /* Keine Margin für die ganze Leiste*/
+    height: 100%;
+    
+}
+
+.footer {
+    background-color: var(--color-schwarz);
+    margin: 0;
+}
+
+.footer-shop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation-footer {
+    color: var(--color-weiss-auf-schwarz);
+
+    color: var(--color-weiss-auf-schwarz);
+    padding: 20px;
+    padding-top: 0;
+    text-align: left;
+
+    flex: 1 0 auto;
+}
+
+.menüpunkt-footer {
+    color:var(--color-weiss-auf-schwarz)
+    
+}
+
+.menü-footer {
+
+    display: flex;
+    /* Auflistung horizontal */
+    justify-content: left;
+    /* Verteilung */
+    align-content: center;
+    /* Umbruch, wenn zu wenig Platz*/
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    /* Keine Aufführungspunkte*/
+    padding: 0px;
+    /* Kein Padding für die ganze Leiste*/
+    margin: 0px;
+    /* Keine Margin für die ganze Leiste*/
+    height: 100%;
+    
+}
+
+
+.adresse-footer {
+    color:var(--color-weiss-auf-schwarz);
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 0.875rem;
 }
