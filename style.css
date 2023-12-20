@@ -61,8 +61,13 @@ body{
   }
 
 h2 {
-  font-style: bold;
+  font-style: black-italic;
   font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-style: black-italic;
+  font-size: var(--font-size-h3);
 }
 
 .headerbildundlogo {
@@ -235,7 +240,7 @@ nav {
   padding: var(--padding-L);
 }
 
-.social-wall h2{
+.h2-aufweiss {
   color: var(--color-black);
 }
 
@@ -258,8 +263,37 @@ nav {
   margin-top: var(--margin-L);
 }
 
-.testimonial h2{
+.testimonial-block h2{
   color: var(--color-black);
 }
 
+.testimonial-block {
+  margin-top: var(--margin-L);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-S);
+}
 
+.testimonial {
+  background-color: var(--color-black);
+}
+
+.sterne-bestellnummer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: var(--margin-L);
+}
+
+.sterne {
+  height: 1.39rem;
+}
+
+.bestellnummer p{
+  text-align: right;
+  margin: 0px;
+}
+
+.testimonial-text {
+  margin: var(--margin-L)
+}
