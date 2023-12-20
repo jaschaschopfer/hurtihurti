@@ -1,0 +1,259 @@
+@media screen and (min-width:  810px){
+    * {
+        font-size: 18px;
+      }
+    :root{
+        /* Für Desktop noch bestimmen. */
+        --margin-S: 10px;
+        --margin-M: 15px;
+        --margin-L: 20px;
+        --margin-XL: 25px;
+        --gap-S: 10px;
+        --padding-L: 10px;
+        --border-s: 0.1rem solid var(--color-black);
+
+        --font-size-h1: 3.33rem;
+        --font-size-h2: 2.22rem;
+        --font-size-h3: 1.39rem;
+        --font-size-h4: 1.39rem;
+        --font-size-default: 1rem;
+        --font-size-small: 0.77rem;
+        --font-size-button-L: 1.39rem;
+        --font-size-button-S: 1.11rem;
+     
+        --color-black: #191919;
+        --color-orange: #E5B100;
+     
+    }
+    
+
+    .headerbild {
+      width: 100%;
+    }
+    
+    .headerlogo {
+      height: 25%;
+    }
+    
+    nav {
+        background-color: var(--color-black);
+        color: white;
+        padding: var(--padding-L);
+        text-align: center;
+    }
+    
+    /* Löschen? Gleich wie auf Mobile */
+    .nav_links {
+        display: flex;
+        /* Auflistung horizontal */
+        justify-content: flex-end;
+        /* Verteilung */
+        align-content: center;
+        /* Umbruch, wenn zu wenig Platz*/
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--gap-S);
+        list-style: none;
+        /* Keine Aufführungspunkte*/
+        padding: 0px;
+        /* Kein Padding für die ganze Leiste*/
+        margin: 0px;
+        /* Keine Margin für die ganze Leiste*/
+        height: 100%;
+      }
+    
+    
+    .menüpunkt {
+      margin-left: var(--margin-S);
+      font-size: var(--font-size-h3);
+    }
+    
+    #iconwarenkorbheader {
+      height: var(--font-size-h3);
+    }
+    
+    .teaser-shop {
+
+    /* ANPASSUNG DESKTOP */
+      margin: var(--margin-L);
+
+
+      display: flex;
+
+      /* ANPASSUNG DESKTOP */
+      flex-direction: row;
+
+
+      gap: var(--gap-S);
+    }
+    
+    
+    .teaser-shop-artikel {
+      background-color: var(--color-black);
+    }
+    
+    /* .titelpreis p {
+      font-size: 18px;
+    } */
+    
+    .titelpreis {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      align-items: center;
+      margin: var(--margin-L);
+    }
+    
+    .titelpreis p {
+      font-size: var(--font-size-h3);
+    }
+    
+    .artikelbeschreibung {
+      margin: var(--margin-L);
+    }
+    
+    /*
+    .teaser-shop-artikel {
+      width: 33%;
+    } */
+      
+    .teaser-shop-artikel-bild {
+      width: 100%;
+      object-fit: cover;
+    /*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
+      }
+    
+    .iconwarenkorbshopteaser {
+      height: var(--font-size-h3);
+      float: right;
+      margin: var(--margin-L);
+    }
+    
+    .teaser-gross {
+      display: grid;
+
+      /* ANPASSUNG DESKTOP */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+
+      background-color: var(--color-black);
+      margin-top: var(--margin-L);
+    }
+    
+    .teaser-gross-textbox {
+      margin: var(--margin-L);
+      position: relative;
+    }
+    
+    .teaser-gross img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+      object-position:center;
+    }
+    
+    .buttongross {
+      float: right;
+      margin-top: var(--margin-S);
+      background-color: var(--color-orange);
+      padding: var(--padding-L);
+      color: var(--color-black);
+    }
+    
+    .usp {
+      display: flex;
+
+      /* ANPASSUNG DESKTOP */
+      flex-direction: row;
+      justify-content: center;
+
+
+      align-items: center;
+
+      /* ANPASSUNG DESKTOP */
+      margin: var(--margin-L);
+
+      border-top: var(--border-s);
+      border-bottom: var(--border-s);
+      padding: var(--padding-L);
+    }
+    
+    .usp p {
+      color: var(--color-black);
+
+      /* ANPASSUNG DESKTOP */
+      margin: var(--margin-M);
+    }
+    
+    .social-wall {
+        /* ANPASSUNG DESKTOP */
+      margin: var(--margin-L);
+    }
+    
+    .h2-aufweiss {
+      color: var(--color-black);
+    }
+    
+    .buttongross-center-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .buttongross-center {
+      margin-top: var(--margin-S);
+      background-color: var(--color-orange);
+      padding: var(--padding-L);
+      color: var(--color-black);
+    }
+    
+    .testimonial-block-mit-titel {
+
+        /* ANPASSUNG DESKTOP */
+        margin: var(--margin-L);
+    }
+      
+    .testimonial-block-mit-titel h2{
+        color: var(--color-black);
+    }
+      
+    .testimonial-block {
+        display: flex;
+
+        /* ANPASSUNG DESKTOP */
+        flex-direction: row;
+
+        gap: var(--gap-S);
+    }
+      
+    .testimonial {
+        background-color: var(--color-black);
+    }
+      
+    .sterne-bestellnummer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: var(--margin-L);
+    }
+      
+    .sterne {
+        height: var(--font-size-h3);
+    }
+      
+    .bestellnummer p{
+        text-align: right;
+        margin: 0px;
+    }
+      
+    .testimonial-text {
+        margin: var(--margin-L)
+    }
+      
+    
+    
+ 
+   
+     
+ 
+ }

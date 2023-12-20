@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_desktop.css">
 </head>
 
 <body>
@@ -16,9 +17,9 @@
             
         <nav>
             <ul class="nav_links">
-                <li> <a class="menüpunkt" href="#">über üs</a></a> </li>
-                <li> <a class="menüpunkt" href="#">kontakt</a> </li>
-                <li> <a class="menüpunkt" href="#">shop</a></li>
+                <li> <a class="menüpunkt" href="ueberuns.html">über üs</a></a> </li>
+                <li> <a class="menüpunkt" href="kontakt.html">kontakt</a> </li>
+                <li> <a class="menüpunkt" href="shop.html">shop</a></li>
                 <li> <a class="menüpunkt" href="#"><img src="images/Icons/Warenkorb/warenkorb_weiss.png" alt="" id="iconwarenkorbheader"></a></li>
             </ul> 
         </nav>
@@ -95,48 +96,53 @@
             </article>
     </section>
 
-    <h2 class="h2-aufweiss">meinige vo anderne</h2>
-    <section class="testimonial-block">
-            <article class="testimonial">
+    <!-- div nachträglich eingefügt, da titel gleiche margin wie der block auf desktop -->
+    <div class="testimonial-block-mit-titel"> 
+        <h2>meinige vo anderne</h2>
+        <section class="testimonial-block">
+                <article class="testimonial">
+                        <div class="sterne-bestellnummer">
+                            <img src="/images/Icons/Sterne/Sterne_5.png" alt="" class="sterne">
+                            <div class="bestellnummer">
+                                <p>Bestellung #00719</p>
+                                <p>von Eleonore</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Super Qualität</h3>
+                            <p>“Die Kleider sind super gemütlich und halten auch nach mehrerem Wachen die Form.”</p>
+                        </div>
+                </article>
+                <article class="testimonial">
                     <div class="sterne-bestellnummer">
-                        <img src="/images/Icons/Sterne/Sterne_5.png" alt="" class="sterne">
+                        <img src="/images/Icons/Sterne/Sterne_3.png" alt="" class="sterne">
                         <div class="bestellnummer">
-                            <p>Bestellung #00719</p>
-                            <p>von Eleonore</p>
+                            <p>Bestellung #00223</p>
+                            <p>von Benjamin</p>
                         </div>
                     </div>
                     <div class="testimonial-text">
-                        <h3>Super Qualität</h3>
-                        <p>“Die Kleider sind super gemütlich und halten auch nach mehrerem Wachen die Form.”</p>
+                        <h3>pünktliche Lieferung</h3>
+                        <p>“Meine Bestellung ist nach 3 Tagen angekommen, und das Paket war toll verpackt.”</p>
                     </div>
-            </article>
-            <article class="testimonial">
-                <div class="sterne-bestellnummer">
-                    <img src="/images/Icons/Sterne/Sterne_3.png" alt="" class="sterne">
-                    <div class="bestellnummer">
-                        <p>Bestellung #00223</p>
-                        <p>von Benjamin</p>
+                </article>
+                <article class="testimonial">
+                    <div class="sterne-bestellnummer">
+                        <img src="/images/Icons/Sterne/Sterne_4.png" alt="" class="sterne">
+                        <div class="bestellnummer">
+                            <p>Bestellung #00167</p>
+                            <p>von Luca</p>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-text">
-                    <h3>pünktliche Lieferung</h3>
-                    <p>“Meine Bestellung ist nach 3 Tagen angekommen, und das Paket war toll verpackt.”</p>
-                </div>
-            </article>
-            <article class="testimonial">
-                <div class="sterne-bestellnummer">
-                    <img src="/images/Icons/Sterne/Sterne_4.png" alt="" class="sterne">
-                    <div class="bestellnummer">
-                        <p>Bestellung #00167</p>
-                        <p>von Luca</p>
+                    <div class="testimonial-text">
+                        <h3>weniger Stress</h3>
+                        <p>“Dank meiner Jutetasche erinnere ich mich jeden Tag daran, genügen Pausen zu machen.”</p>
                     </div>
-                </div>
-                <div class="testimonial-text">
-                    <h3>weniger Stress</h3>
-                    <p>“Dank meiner Jutetasche erinnere ich mich jeden Tag daran, genügen Pausen zu machen.”</p>
-                </div>
-            
-    </section>
+        </section>
+        <div class="buttongross-center-container">
+            <a href="shop.html" class="buttongross-center">hurti kaufen</a>
+        </div>
+    </div>
 
     </main>
 

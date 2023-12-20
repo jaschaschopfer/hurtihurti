@@ -1,39 +1,48 @@
+* {
+  font-family: Komet;
+  font-style: italic;
+  font-size: 15px;
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
 :root{
-   --margin-S: 10px;
-   --margin-M: 15px;
-   --margin-L: 20px;
-   --margin-XL: 25px;
+   --margin-S: 5px;
+   --margin-M: 8px;
+   --margin-L: 10px;
+   --margin-XL: 13px;
    --gap-S: 10px;
    --padding-L: 10px;
    --border-s: 0.1rem solid var(--color-black);
 
    /* für mobile definieren! diese grössen gelten für desktop */
-   --font-size-h1: 3.33rem;
    --font-size-h2: 2.22rem;
-   --font-size-h3: 1.39rem;
-   --font-size-h4: 1.39rem;
-   --font-size-default: 1rem;
-   --font-size-small: 0.77rem;
-   --font-size-button-L: 1.39rem;
-   --font-size-button-S: 1.11rem;
+  --font-size-h3: 1.39rem;
+  --font-size-h4: 1.39rem;
+  --font-size-default: 1rem;
+  --font-size-small: 0.77rem;
+  --font-size-button-L: 1.39rem;
+  --font-size-button-S: 1.11rem;
+
+
 
    --color-black: #191919;
    --color-orange: #E5B100;
 
 }
 
-/* root kopie für desktop.
-:root{
-  dies sind die margins bei mobile, für desktop noch anpassen.
+/*  Root Kopie vom 20. Dezember 17:06. Von hier aus wurden Mobile werte bestimmt.
+root{
   --margin-S: 10px;
   --margin-M: 15px;
   --margin-L: 20px;
   --margin-XL: 25px;
   --gap-S: 10px;
-  --padding-L: 20px;
+  --padding-L: 10px;
+  --border-s: 0.1rem solid var(--color-black); */
 
-dies sind die korrekten grössen für desktop
-  --font-size-h1: 3.33rem;
+  /* für mobile definieren! diese grössen gelten für desktop */
+  /* --font-size-h1: 3.33rem;
   --font-size-h2: 2.22rem;
   --font-size-h3: 1.39rem;
   --font-size-h4: 1.39rem;
@@ -42,18 +51,10 @@ dies sind die korrekten grössen für desktop
   --font-size-button-L: 1.39rem;
   --font-size-button-S: 1.11rem;
 
-  color bleibt bei desktop gleich
   --color-black: #191919;
+  --color-orange: #E5B100;
 
 } */
-
-* {
-    font-family: Komet;
-    font-style: italic;
-    font-size: 18px;
-    color: #F4F4F4;
-    text-decoration: none;
-  }
 
 body{
   background-color: white;
@@ -237,7 +238,7 @@ nav {
 }
 
 .social-wall {
-  padding: var(--padding-L);
+  margin-top: var(--margin-L);
 }
 
 .h2-aufweiss {
@@ -256,19 +257,15 @@ nav {
   color: var(--color-black);
 }
 
-.teaser-gross-inverted {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background-color: var(--color-black);
+.testimonial-block-mit-titel {
   margin-top: var(--margin-L);
 }
 
-.testimonial-block h2{
+.testimonial-block-mit-titel h2{
   color: var(--color-black);
 }
 
 .testimonial-block {
-  margin-top: var(--margin-L);
   display: flex;
   flex-direction: column;
   gap: var(--gap-S);
@@ -286,7 +283,7 @@ nav {
 }
 
 .sterne {
-  height: 1.39rem;
+  height: var(--font-size-h3);
 }
 
 .bestellnummer p{
