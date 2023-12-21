@@ -16,11 +16,47 @@
 
 * {
     font-family: Komet;
-    font-style: italic;
     font-size: 1.125rem;
 
     text-decoration: none;
 }
+
+
+Komet Regular
+font-family: "komet", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Komet Regular Italic
+font-family: "komet", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Komet Bold
+font-family: "komet", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Komet Bold Italic
+font-family: "komet", sans-serif;
+font-weight: 700;
+font-style: italic;
+Komet Regular SC
+font-family: "komet-sc", sans-serif;
+font-weight: 400;
+font-style: normal;
+Komet Regular SC Italic
+font-family: "komet-sc", sans-serif;
+font-weight: 400;
+font-style: italic;
+Komet Bold SC
+font-family: "komet-sc", sans-serif;
+font-weight: 700;
+font-style: normal;
+Komet Bold SC Italic
+font-family: "komet-sc", sans-serif;
+font-weight: 700;
+font-style: italic;
 
 h1 {
     font-style: bold;
@@ -180,7 +216,6 @@ body {
 
 .navigation-footer {
     color: var(--color-weiss-auf-schwarz);
-
     color: var(--color-weiss-auf-schwarz);
     padding: 20px;
     padding-top: 0;
