@@ -1,48 +1,35 @@
-:root {
-
---color-main-bg: rgb(239, 235, 235);
---color-main-font: black;
---margin-XL: 16px;
-
-}
-
-* {
+  * {
     font-family: Komet;
     font-style: italic;
-    font-size: 1.125rem;
-    color: #191919;
-
+    font-size: 15px;
+    color:var(--color-black);
     text-decoration: none;
 
 }
-
-
-h1 {
-   font-style: bold;
-   font-size: 3.75rem;
-   text-align:left;
-
-}
-
-
-
-.flex-container {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 20px;
-        flex-wrap: wrap;
-}
-
-.flex-container > section {
-
-
-            margin: 5px 0;
-
-}
-
-@media screen and (max-width: 768px) {
+  
+  :root{
+     --margin-S: 5px;
+     --margin-M: 8px;
+     --margin-L: 10px;
+     --margin-XL: 13px;
+     --gap-S: 10px;
+     --padding-L: 10px;
+     --border-s: 0.1rem solid var(--color-black);
+  
+     /* für mobile definieren! diese grössen gelten für desktop */
+     --font-size-h2: 2.22rem;
+    --font-size-h3: 1.39rem;
+    --font-size-h4: 1.39rem;
+    --font-size-default: 1rem;
+    --font-size-small: 0.77rem;
+    --font-size-button-L: 1.39rem;
+    --font-size-button-S: 1.11rem;
+  
+     --color-black: #191919;
+     --color-orange: #E5B100;
+     --color-white: #F4F4F4;
+  
+  }
 
 h1 {
      font-size: 2.5rem;
@@ -56,13 +43,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 20px;
+    margin-left: var(--margin-L);
     flex-wrap: wrap;
-}
-
-
-
-
-
-
 }

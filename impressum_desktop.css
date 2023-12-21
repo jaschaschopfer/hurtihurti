@@ -1,0 +1,22 @@
+@media screen and (min-width:  810px){
+
+    
+h1 {
+    font-style: bold;
+    font-size: 3.75rem;
+    text-align:left;
+ 
+ }
+ 
+ 
+ 
+ .flex-container {
+ 
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         margin-left: 20px;
+         flex-wrap: wrap;
+ }
+
+}
