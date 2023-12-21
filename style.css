@@ -15,7 +15,8 @@
    --padding-L: 10px;
    --border-s: 0.1rem solid var(--color-black);
 
-   /* für mobile definieren! diese grössen gelten für desktop */
+   
+   --font-size-h1: 3.33rem;
    --font-size-h2: 2.22rem;
   --font-size-h3: 1.39rem;
   --font-size-h4: 1.39rem;
@@ -73,6 +74,7 @@ h3 {
 
 .headerbildundlogo {
   position: relative;
+  margin: 0px;
 }
 
 .headerbild {
@@ -105,6 +107,7 @@ nav {
     color: white;
     padding: var(--padding-L);
     text-align: center;
+    margin: 0px;
 }
 
 .nav_links {

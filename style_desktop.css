@@ -2,11 +2,12 @@
     * {
         font-size: 18px;
       }
+
     :root{
         /* Für Desktop noch bestimmen. */
         --margin-S: 10px;
         --margin-M: 15px;
-        --margin-L: 20px;
+        --margin-L: 50px;
         --margin-XL: 25px;
         --gap-S: 10px;
         --padding-L: 10px;
@@ -42,24 +43,8 @@
         text-align: center;
     }
     
-    /* Löschen? Gleich wie auf Mobile */
     .nav_links {
-        display: flex;
-        /* Auflistung horizontal */
-        justify-content: flex-end;
-        /* Verteilung */
-        align-content: center;
-        /* Umbruch, wenn zu wenig Platz*/
-        align-items: center;
-        flex-wrap: wrap;
-        gap: var(--gap-S);
-        list-style: none;
-        /* Keine Aufführungspunkte*/
-        padding: 0px;
-        /* Kein Padding für die ganze Leiste*/
-        margin: 0px;
-        /* Keine Margin für die ganze Leiste*/
-        height: 100%;
+        
       }
     
     
