@@ -98,7 +98,6 @@ h4 {
 
 body {
   background-color: var(--color-white);
-  color: var(--color-black);
   }
 
 .headerbildundlogo {
@@ -133,7 +132,7 @@ body {
 
 nav {
     background-color: var(--color-black);
-    color: white;
+    color: var(--color-white);
     padding: var(--padding-L);
     text-align: center;
     margin: 0px;
@@ -191,10 +190,6 @@ nav {
   background-color: var(--color-black);
 }
 
-/* .titelpreis p {
-  font-size: 18px;
-} */
-
 .titelpreis {
   display: grid;
   grid-template-columns: auto auto;
@@ -218,8 +213,8 @@ nav {
   
 .teaser-shop-artikel-bild {
   width: 100%;
-  object-fit: cover;
 /*füllt den Rahmen ohne das Seitenverhältnis zu verändern*/
+  object-fit: cover;
   }
 
 .iconwarenkorbshopteaser {
