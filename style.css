@@ -148,7 +148,7 @@ nav {
     /* Umbruch, wenn zu wenig Platz*/
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--gap-S);
+    gap: 10px;
     list-style: none;
     /* Keine Aufführungspunkte*/
     padding: 0px;
@@ -162,10 +162,15 @@ nav {
 .menupunkt {
   margin-left: var(--margin-S);
   font-size: var(--font-size-h3);
+  font-family: komet, sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 #iconwarenkorbheader {
   height: var(--font-size-h3);
+  /* Anpassung, damit auf gleicher Höhe wie Schrift */
+  padding-top: 5px;
 }
 
 
@@ -181,6 +186,9 @@ nav {
 
 .teaser-shop {
   margin-top: var(--margin-L);
+  margin-left: var(--margin-M);
+  margin-right: var(--margin-M);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,7 +209,6 @@ nav {
 
 .titelpreis h2, h3 {
   margin: 0;
-
 }
 
 .titelpreis h3 {
@@ -234,9 +241,15 @@ nav {
   margin-top: var(--margin-L);
 }
 
-.teaser-gross-textbox {
-  margin: var(--margin-L);
+.teaser-gross-textbox-mit-button {
+  margin: var(--margin-M);
   position: relative;
+}
+
+.teaser-gross-textbox {
+  margin: var(--margin-M);
+  /* damit Text nicht in .buttongross hinein läuft */
+  margin-bottom: calc( var(--padding-button) * 4);
 }
 
 .teaser-gross img {
@@ -247,8 +260,9 @@ nav {
 }
 
 .buttongross {
-  float: right;
-  margin-top: var(--margin-S);
+  position: absolute;
+  right: 0;
+  bottom: 0;
   background-color: var(--color-orange);
   padding: var(--padding-button);
   color: var(--color-black);

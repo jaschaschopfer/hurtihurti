@@ -45,9 +45,12 @@
     }
     
     nav {
+      padding-right: 110px;
     }
     
-    /* .nav_links  */
+    .nav_links {
+      gap: 100px;
+    }
     
     
     /* .menupunkt  */
@@ -56,6 +59,7 @@
     
     .teaser-shop {
       margin: var(--margin-L);
+
       flex-direction: row;
       flex-wrap: wrap;
     }
