@@ -272,18 +272,28 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--gap-S);
+
   margin-top: var(--margin-L);
+  margin-left: var(--margin-M);
+  margin-right: var(--margin-M);
+
   border-top: var(--border-s);
   border-bottom: var(--border-s);
+
   padding: var(--padding-L);
 }
 
-.usp p {
+.usp h3 {
   color: var(--color-black);
+  text-align: center;
+
 }
 
 .social-wall {
   margin-top: var(--margin-L);
+  margin-left: var(--margin-M);
+  margin-right: var(--margin-M);
 }
 
 .h2-aufweiss {
@@ -296,7 +306,7 @@ nav {
 }
 
 .buttongross-center {
-  margin-top: var(--margin-S);
+  margin-top: var(--margin-M);
   background-color: var(--color-orange);
   padding: var(--padding-button);
   color: var(--color-black);
@@ -304,6 +314,8 @@ nav {
 
 .testimonial-block-mit-titel {
   margin-top: var(--margin-L);
+  margin-left: var(--margin-M);
+  margin-right: var(--margin-M);
 }
 
 .testimonial-block-mit-titel h2{
@@ -324,7 +336,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: var(--margin-L);
+  margin: var(--margin-M);
 }
 
 .sterne {
@@ -333,9 +345,10 @@ nav {
 
 .bestellnummer p{
   text-align: right;
-  margin: 0px;
+  margin: 0;
 }
 
 .testimonial-text {
-  margin: var(--margin-L)
+  margin: var(--margin-M)
 }
+

@@ -59,7 +59,6 @@
     
     .teaser-shop {
       margin: var(--margin-L);
-
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -87,15 +86,17 @@
     /* .teaser-gross img  */
     
     /* .buttongross  */
-    
+
     .usp {
       flex-direction: row;
       justify-content: center;
       margin: var(--margin-L);
+      /* Versuch, content so breit zu gestalten wie teaser oben */
+      /* max-width: calc((3 * var(--column-width)) + (2 * var(--gap-S))); */
     }
     
-    .usp p {
-      margin: var(--margin-M);
+    .usp h3 {
+      max-width: var(--column-width);
     }
     
     .social-wall {
@@ -116,9 +117,13 @@
       
     .testimonial-block {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
       
-    /* .testimonial  */
+    .testimonial {
+      width: var(--column-width);
+    }
       
     /* .sterne-bestellnummer  */
       
