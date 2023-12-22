@@ -132,9 +132,9 @@ body {
 } */
 
 nav {
-    background-color: var(--color-black);
     color: var(--color-white);
-    padding: var(--padding-L);
+    background-color: var(--color-black);
+    padding: 15px;
     text-align: center;
     margin: 0px;
 }

@@ -8,6 +8,7 @@
         --margin-M: 25px;
         --margin-L: 80px;
         --padding-L: 80px;
+        --column-width: 415px;
 
         /* gemäss CD/CI */
         --padding-button: 30px;
@@ -43,7 +44,8 @@
       height: 25%;
     }
     
-    /* nav */
+    nav {
+    }
     
     /* .nav_links  */
     
@@ -59,7 +61,7 @@
     }
     
     .teaser-shop-artikel {
-      flex: 0 0 30%;
+      width: var(--column-width);
     }
     
     
