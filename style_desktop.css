@@ -2,8 +2,10 @@
 
     :root{
         --margin-S: 10px;
+        
 
         /* gemäss Figma */
+        --margin-M: 25px;
         --margin-L: 80px;
         --padding-L: 80px;
 
@@ -53,21 +55,17 @@
     .teaser-shop {
       margin: var(--margin-L);
       flex-direction: row;
+      flex-wrap: wrap;
     }
     
-    /* .teaser-shop-artikel  */
+    .teaser-shop-artikel {
+      flex: 0 0 30%;
+    }
     
     
     /* .titelpreis */
     
-    /* .titelpreis p  */
-    
     /* .artikelbeschreibung  */
-    
-    /*
-    .teaser-shop-artikel {
-      width: 33%;
-    } */
       
     /* .teaser-shop-artikel-bild  */
     
