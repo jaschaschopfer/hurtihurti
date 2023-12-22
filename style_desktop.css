@@ -2,11 +2,17 @@
 
     :root{
         --margin-S: 10px;
-        --margin-M: 15px;
+
+        /* gemäss Figma */
         --margin-L: 80px;
-        --margin-XL: 25px;
-        --gap-S: 10px;
-        --padding-L: 10px;
+        --padding-L: 80px;
+
+        /* gemäss CD/CI */
+        --padding-button: 30px;
+        
+        /* gemäss Figma 19px (aufgerundet auf 20px)*/
+        --gap-S: 20px;
+
         --border-s: 0.1rem solid var(--color-black);
 
         --font-size-h1: 3.33rem;
@@ -20,6 +26,7 @@
      
         --color-black: #191919;
         --color-orange: #E5B100;
+        --color-white: #F4F4F4;
      
     }
 
@@ -142,7 +149,7 @@
       float: right;
       margin-top: var(--margin-S);
       background-color: var(--color-orange);
-      padding: var(--padding-L);
+      padding: var(--padding-button);
       color: var(--color-black);
     }
     
@@ -188,7 +195,7 @@
     .buttongross-center {
       margin-top: var(--margin-S);
       background-color: var(--color-orange);
-      padding: var(--padding-L);
+      padding: var(--padding-button);
       color: var(--color-black);
     }
     

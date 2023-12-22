@@ -1,18 +1,14 @@
 :root{
    --margin-S: 5px;
-   --margin-M: 8px; 
    --margin-L: 40px;
-   --margin-XL: 13px;
-   --gap-S: 10px;
-
    --padding-L: 10px;
+
    --padding-button: 15px;
+
+   --gap-S: 10px;
 
    --border-s: 0.1rem solid var(--color-black);
 
-
-
-   
    --font-size-h1: 3.33rem;
    --font-size-h2: 2.22rem;
    --font-size-h3: 1.39rem;
@@ -289,7 +285,7 @@ nav {
 .buttongross-center {
   margin-top: var(--margin-S);
   background-color: var(--color-orange);
-  padding: var(--padding-L);
+  padding: var(--padding-button);
   color: var(--color-black);
 }
 
