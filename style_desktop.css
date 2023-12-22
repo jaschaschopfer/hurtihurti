@@ -1,13 +1,9 @@
 @media screen and (min-width:  810px){
-    * {
-        font-size: 18px;
-      }
 
     :root{
-        /* Für Desktop noch bestimmen. */
         --margin-S: 10px;
         --margin-M: 15px;
-        --margin-L: 50px;
+        --margin-L: 80px;
         --margin-XL: 25px;
         --gap-S: 10px;
         --padding-L: 10px;
@@ -25,6 +21,10 @@
         --color-black: #191919;
         --color-orange: #E5B100;
      
+    }
+
+    * {
+      font-size: 18px;
     }
     
 
