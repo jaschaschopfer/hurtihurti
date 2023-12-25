@@ -1,0 +1,150 @@
+:root{
+--margin-S: 5px;
+--margin-M: 12px;
+--margin-L: 40px;
+--padding-L: 10px;
+
+--padding-button: 15px;
+
+--gap-S: 10px;
+
+--border-s: 0.1rem solid var(--color-black);
+
+--font-size-h1: 3.33rem;
+--font-size-h2: 2.22rem;
+--font-size-h3: 1.39rem;
+--font-size-h4: 1.39rem;
+--font-size-default: 1rem;
+--font-size-small: 0.77rem;
+--font-size-button-L: 1.39rem;
+--font-size-button-S: 1.11rem;
+
+--color-black: #191919;
+--color-orange: #E5B100;
+--color-white: #F4F4F4;
+
+}
+* {
+/* Komet Regular */
+font-family: "komet", sans-serif;
+font-weight: 400;
+font-style: normal;
+/* font-size mobile: 15px, font-size desktop: 18px immer einhalten */
+font-size: 15px;
+color: var(--color-white);
+text-decoration: none;
+}
+h1 {
+/* Komet Black Italic */
+font-family: "komet", sans-serif;
+font-weight: 900;
+font-style: italic;
+
+font-size: var(--font-size-h1);
+color: var(--color-black);
+}
+
+h2 {
+/* Komet Black Italic */
+font-family: komet, sans-serif;
+font-weight: 900;
+font-style: italic;
+
+font-size: var(--font-size-h2);
+}
+
+h3 {
+/* Komet Black Italic */
+font-family: komet, sans-serif;
+font-weight: 900;
+font-style: italic;
+
+font-size: var(--font-size-h3);
+}
+
+h4 {
+/* Komet Medium */
+font-family: komet, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-size: var(--font-size-h4);
+} 
+
+body {
+background-color: var(--color-white);
+}
+
+.kartenblock {
+    margin-top: var(--margin-M);
+    margin-left: var(--margin-M);
+    margin-right: var(--margin-M);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-S);
+}
+
+.karte {
+    background-color: var(--color-black);
+}
+
+.artikel-bild {
+    width: 100%;
+    object-fit: cover;
+}
+
+.artikel-infos {
+    margin: var(--margin-M);
+}
+
+.artikel-infos h2{
+    margin: 0; 
+
+}
+
+.artikel-infos p {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.artikel-infos ul {
+    margin-top: 0;
+}
+
+.preis-und-warenkorb {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+    
+}
+
+.preis-und-warenkorb h3 {
+    margin: 0;
+}
+
+.iconwarenkorbshopteaser {
+    /* grösse warenkorb gleich wie index.html seite (h3) */
+    height: var(--font-size-h3); 
+
+}
+
+
+.h2-aufweiss {
+    color: var(--color-black);
+  }
+
+.buttongross {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-orange);
+    padding: var(--padding-button);
+    color: var(--color-black);
+  }
+   
+
+
+
