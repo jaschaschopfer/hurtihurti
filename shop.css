@@ -91,6 +91,7 @@ background-color: var(--color-white);
 }
 
 .artikel-bild {
+    aspect-ratio: 1/1; 
     width: 100%;
     object-fit: cover;
 }
@@ -136,15 +137,45 @@ background-color: var(--color-white);
     color: var(--color-black);
   }
 
+.o-no-wichtig-einzel {
+    padding: var(--margin-M);
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.o-no-wichtig-einzel h3 {
+
+    color: var(--color-orange);
+    margin: 0;
+}
+
+
+.buttongross-container {
+    display: flex;
+    justify-content: end;
+
+}
+
 .buttongross {
-    position: absolute;
-    right: 0;
-    bottom: 0;
     background-color: var(--color-orange);
     padding: var(--padding-button);
     color: var(--color-black);
+    font-weight: 900;
+    font-size:var(--font-size-button-S);
+    font-style: italic;
   }
-   
+
+  .gots {
+    height: 70px;
+    object-fit: cover;
+  }
+
+  
+
+  
+
 
 
 
