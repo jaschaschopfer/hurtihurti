@@ -1,0 +1,58 @@
+@media screen and (min-width:  810px){
+
+    :root{
+        --margin-S: 10px;
+        
+
+        /* gemäss Figma */
+        --margin-M: 25px;
+        --margin-L: 80px;
+        --padding-L: 80px;
+        --column-width: 415px;
+
+        /* gemäss CD/CI */
+        --padding-button: 30px;
+        
+        /* gemäss Figma 19px (aufgerundet auf 20px)*/
+        --gap-S: 20px;
+
+        --border-s: 0.2rem solid var(--color-black);
+
+        --font-size-h1: 3.33rem;
+        --font-size-h2: 2.22rem;
+        --font-size-h3: 1.39rem;
+        --font-size-h4: 1.39rem;
+        --font-size-default: 1rem;
+        --font-size-small: 0.77rem;
+        --font-size-button-L: 1.39rem;
+        --font-size-button-S: 1.11rem;
+     
+        --color-black: #191919;
+        --color-orange: #E5B100;
+        --color-white: #F4F4F4;
+     
+    }
+
+    * {
+      font-size: 18px;
+    }
+
+    
+
+    .kartenblock {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .section-mit-titel {
+        margin: var(--margin-L);
+    }
+
+    .karte {
+        max-width: var(--column-width);
+    }
+
+    
+
+}

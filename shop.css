@@ -49,7 +49,6 @@ h2 {
 font-family: komet, sans-serif;
 font-weight: 900;
 font-style: italic;
-
 font-size: var(--font-size-h2);
 }
 
@@ -75,14 +74,17 @@ body {
 background-color: var(--color-white);
 }
 
-.kartenblock {
-    margin-top: var(--margin-M);
-    margin-left: var(--margin-M);
-    margin-right: var(--margin-M);
-
+.section-mit-titel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: var(--margin-L);
+    margin-left: var(--margin-M);
+    margin-right: var(--margin-M);
+}
+
+.kartenblock {
+    display: flex;
+    flex-direction: column;
     gap: var(--gap-S);
 }
 
