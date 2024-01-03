@@ -4,110 +4,108 @@
 3.	Margin/Padding immer Grösseneinheit «px» verwenden
 4.	Wir arbeiten mobile-first  html und CSS ist grundsätzlich für Mobile ausgelegt, via media queries machen wir schritt für schritt anpassungen für desktop.
 */
-
-
 :root {
-    --color-main-bg: #F2F2F2;
-    --color-schwarz: #191919;
-    --color-gelb: #E5B100;
-    --color-weiss-auf-schwarz: rgb(255, 255, 255);
-    --font-size-basis: 16px
+    --margin-S: 5px;
+    --margin-M: 12px;
+    --margin-L: 40px;
+    --padding-L: 10px;
+
+    --padding-button: 15px;
+
+    --gap-S: 10px;
+
+    --border-s: 0.1rem solid var(--color-black);
+
+    --font-size-h1: 3.33rem;
+    --font-size-h2: 2.22rem;
+    --font-size-h3: 1.39rem;
+    --font-size-h4: 1.39rem;
+    --font-size-default: 1rem;
+    --font-size-small: 0.77rem;
+    --font-size-button-L: 1.39rem;
+    --font-size-button-S: 1.11rem;
+
+    --color-black: #191919;
+    --color-orange: #E5B100;
+    --color-white: #F4F4F4;
 }
 
 * {
     font-family: Komet;
     font-size: 1.125rem;
-
     text-decoration: none;
 }
 
-
-Komet Regular
-font-family: "komet", sans-serif;
-font-weight: 400;
-font-style: normal;
-
-Komet Regular Italic
-font-family: "komet", sans-serif;
-font-weight: 400;
-font-style: italic;
-
-Komet Bold
-font-family: "komet", sans-serif;
-font-weight: 700;
-font-style: normal;
-
-Komet Bold Italic
-font-family: "komet", sans-serif;
-font-weight: 700;
-font-style: italic;
-Komet Regular SC
-font-family: "komet-sc", sans-serif;
-font-weight: 400;
-font-style: normal;
-Komet Regular SC Italic
-font-family: "komet-sc", sans-serif;
-font-weight: 400;
-font-style: italic;
-Komet Bold SC
-font-family: "komet-sc", sans-serif;
-font-weight: 700;
-font-style: normal;
-Komet Bold SC Italic
-font-family: "komet-sc", sans-serif;
-font-weight: 700;
-font-style: italic;
+* {
+    /* Komet Regular */
+    font-family: "komet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size mobile: 15px, font-size desktop: 18px immer einhalten */
+    font-size: 15px;
+    text-decoration: none;
+}
 
 h1 {
-    font-style: bold;
-    font-size: 3.75rem;
+    /* Komet Black Italic */
+    font-family: "komet", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-style: bold;
-    font-size: 2.5rem;
+    /* Komet Black Italic */
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    font-size: var(--font-size-h2);
 }
 
 h3 {
-    font-style: bold;
-    font-size: 1.5625rem;
+    /* Komet Black Italic */
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    font-size: var(--font-size-h3);
 }
 
 h4 {
-    font-style: medium;
-    font-size: 1.5625rem;
+    /* Komet Medium */
+    font-family: komet, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: var(--font-size-h4);
 }
 
-h5 {
-    font-style: small;
-    font-size: 1.125;
+body {
+    background-color: var(--color-white);
 }
 
-h6 {
-    font-style: small;
-    font-size: 0.875rem;
+.link-logo-header {
+    width: 40%;
 }
 
-p {
-    font-style: small;
-    font-size: 0.875rem;
-
-}
-
-.logo {
-    width: 90%;
+.logo-header {
+    width: 100%;
 }
 
 #iconwarenkorbheader {
-    height: 1rem;
+    height: 1.5rem;
 }
 
 .header {
     display: flex;
 }
 
+
+
 .navigation {
-    color: var(--color-weiss-auf-schwarz);
+    color: var(--color-white);
     padding: 20px;
     padding-top: 0;
     text-align: left;
@@ -133,14 +131,15 @@ p {
     height: 100%;
 }
 
-.menüpunkt {
+.menupunkt {
+    font-size: var(--font-size-h4);
     margin-left: 10px;
-    color: var(--color-schwarz);
+    color: var(--color-black);
 }
 
 body {
-    background-color: var(--color-main-bg);
-    color: black;
+    background-color: var(--color-white);
+    color: var(--color-black);
     margin: 20px;
 
 }
@@ -163,13 +162,13 @@ body {
 
 
 .person {
-    background-color: var(--color-schwarz);
-    color: var(--color-weiss-auf-schwarz);
+    background-color: var(--color-black);
+    color: var(--color-white);
     width: 100;
 }
 
 .gelb-h2 {
-    color: var(--color-gelb);
+    color: var(--color-orange);
 }
 
 .person-text {
@@ -178,13 +177,28 @@ body {
     padding-bottom: 20px;
 }
 
-.logo-footer {
-    width: 20%;
+
+
+/*ab hier kopieren für Footer*/
+
+.footer {
+    background-color: var(--color-black);
+    margin: 0;
+    padding: 20px;
 }
 
+.link-logo-footer {
+    width: 15%;
+}
+
+.logo-footer {
+    width: 100%;
+    align-self: flex-start;
+}
+
+
 .shop-warenkorb {
-    color: var(--color-gelb);
-    
+    color: var(--color-orange);
     display: flex;
     /* Auflistung horizontal */
     justify-content: flex-end;
@@ -192,45 +206,37 @@ body {
     align-content: center;
     /* Umbruch, wenn zu wenig Platz*/
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
     /* Keine Aufführungspunkte*/
-    padding: 0px;
     /* Kein Padding für die ganze Leiste*/
     margin: 0px;
     /* Keine Margin für die ganze Leiste*/
     height: 100%;
-    
 }
 
-.footer {
-    background-color: var(--color-schwarz);
-    margin: 0;
-}
 
 .footer-shop {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 .navigation-footer {
-    color: var(--color-weiss-auf-schwarz);
-    color: var(--color-weiss-auf-schwarz);
-    padding: 20px;
+    color: var(--color-white);
     padding-top: 0;
     text-align: left;
-
     flex: 1 0 auto;
 }
 
-.menüpunkt-footer {
-    color:var(--color-weiss-auf-schwarz)
-    
+.menupunkt-footer {
+    color: var(--color-white);
+    justify-content: center;
+
 }
 
 .menü-footer {
-
     display: flex;
     /* Auflistung horizontal */
     justify-content: left;
@@ -238,23 +244,23 @@ body {
     align-content: center;
     /* Umbruch, wenn zu wenig Platz*/
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
     /* Keine Aufführungspunkte*/
     padding: 0px;
-    /* Kein Padding für die ganze Leiste*/
     margin: 0px;
     /* Keine Margin für die ganze Leiste*/
     height: 100%;
-    
 }
 
+hr {
+    width: auto;
+    height: 0.5 px;
+    background-color: var(--color-white);
+}
 
 .adresse-footer {
-    color:var(--color-weiss-auf-schwarz);
-    margin: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    font-size: 0.875rem;
+    color: var(--color-white);
+    padding-top: 0;
+    font-size: var(--font-size-small);
 }
