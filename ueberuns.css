@@ -263,4 +263,5 @@ hr {
     color: var(--color-white);
     padding-top: 0;
     font-size: var(--font-size-small);
+    text-decoration: none; 
 }
