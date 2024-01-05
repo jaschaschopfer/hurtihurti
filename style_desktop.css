@@ -78,8 +78,8 @@
   }
   
   .teaser-shop-artikel {
-    /* width 30% damit alle gleich breit sind */
-    width: 30%;
+    /* width 32.25% damit es mit gap zusammen gleich 100% gibt*/
+    width: 32.25%;
     /* min-width damit content platz hat und flex umbricht */
     min-width: var(--column-width);
   }
@@ -128,19 +128,20 @@
   /* .buttongross-center  */
   
   .testimonial-block-mit-titel {
-      margin: var(--margin-L);
+    margin: var(--margin-L);
   }
     
   /* .testimonial-block-mit-titel h2 */
     
   .testimonial-block {
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+      overflow-x: auto
   }
     
   .testimonial {
-    width: 30%;
+    /* width: 30%; */
     min-width: var(--column-width);
   }
     
