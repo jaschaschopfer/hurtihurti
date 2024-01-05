@@ -70,6 +70,76 @@ font-style: normal;
 font-size: var(--font-size-h4);
 } 
 
+/*header*/
+.header {
+  margin-top: var(--margin-L);
+  margin-bottom: var(--margin-L);
+}
+
+.link-logo-header {
+  max-width: 150px;
+  height: auto;
+}
+
+.logo-header {
+  width: 100%;
+}
+
+#iconwarenkorbheader {
+  height: var(--font-size-h3);
+  /* Anpassung, damit auf gleicher Höhe wie Schrift */
+  padding-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation {
+  color: var(--color-white);
+  padding: 20px;
+  padding-top: 0;
+  text-align: left;
+
+  flex: 1 0 auto;
+  justify-content: flex-end;
+}
+
+.nav_inhalt {
+  display: flex;
+  /* Auflistung horizontal */
+  justify-content: flex-end;
+  /* Verteilung */
+  align-content: center;
+  /* Umbruch, wenn zu wenig Platz*/
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  /* Keine Aufführungspunkte*/
+  padding: 0px;
+  /* Kein Padding für die ganze Leiste*/
+  margin: 0px;
+  /* Keine Margin für die ganze Leiste*/
+  height: 100%;
+}
+
+.menupunkt {
+  font-family: komet, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--font-size-h3);
+  margin-left: 10px;
+  color: var(--color-black);
+}
+
+.menupunkt-shop {
+  color: var(--color-orange);
+}
+
+
+
 body {
 background-color: var(--color-white);
 }
@@ -175,7 +245,96 @@ background-color: var(--color-white);
   }
 
   
+/*Footer*/
 
+.footer {
+    background-color: var(--color-black);
+    margin: 0;
+    padding: 20px;
+  
+  }
+  
+  .link-logo-footer {
+    max-width: 70px;
+    height: auto;
+  }
+  
+  
+  .logo-footer {
+    width: 100%;
+    align-self: flex-start;
+  }
+  
+  .shop-warenkorb {
+    color: var(--color-orange);
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 0px;
+    height: 100%;
+  }
+  
+  
+  .footer-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  
+  #iconwarenkorbheader {
+    height: 23px;
+  }
+  
+  .navigation-footer {
+    color: var(--color-white);
+    padding-top: 0;
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  
+  .menupunkt-footer {
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: var(--font-size-h3);
+  
+    color: var(--color-white);
+    justify-content: center;
+  }
+  
+  .menupunkt-footer-shop {
+    color: var(--color-orange);
+  }
+  
+  .menu-footer {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+  }
+  
+  hr {
+    width: auto;
+    height: 0.5 px;
+    background-color: var(--color-white);
+  }
+  
+  .adresse-footer {
+    color: var(--color-white);
+    padding-top: 0;
+    font-size: var(--font-size-small);
+    text-decoration: none;
+  }
+  
   
 
 

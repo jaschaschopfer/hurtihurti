@@ -1,22 +1,56 @@
 @media screen and (min-width: 768px) {
 
+  :root {
 
+    --column-width: 415px;
+    --gap-S: 20px;
+
+    --margin-S: 5px;
+    --margin-M: 12px;
+    --margin-L: 80px;
+    --padding-L: 10px;
+  }
+
+
+  .begrenzung-header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   .link-logo-header {
-    width: 20%;
-}
+    max-width: 600px;
+    height: auto;
+
+  }
 
   .nav_inhalt {
     gap: 20px;
   }
 
+  .link-logo-header {
+    max-width: 200px;
+  }
+
+  .menupunkt {
+    font-size: var(--font-size-h2);
+  }
+
+  .begrenzung-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
   .vorstellung-grid {
     display: grid;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+    margin: var(--margin-L);
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: auto;
+    max-width: calc(3 * var(--column-width) + (2 * var(--gap-S)));
   }
 
   .vorstellung-1 {
@@ -49,12 +83,15 @@
     grid-row: 2 / span 1;
   }
 
+  .geschichte {
+    margin: var(--margin-L);
+  }
 
   .geschichte-abschnitt {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    gap: 10px;
+    gap: var(--gap-S)
   }
 
   .geschichte-abschnitt>* {
@@ -67,22 +104,31 @@
     margin-right: auto;
   }
 
+  /*ab hier kopieren für Footer*/
 
-
-
-/*ab hier kopieren für Footer*/
+  .begrenzung-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
   .link-logo-footer {
-    width: 7%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  .menupunkt-footer {
+    font-size: var(--font-size-h2);
   }
 
   .footer-shop {
-    padding-bottom: 40px;
+    padding-bottom: 120px;
   }
 
-  .menupunkt-footer-shop-desktop {
-    font-size: var(--font-size-h4);
+  .menu-footer {
+    gap: 50px;
   }
+
 
 
 }

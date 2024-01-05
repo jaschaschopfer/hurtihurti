@@ -154,7 +154,30 @@
   /* .testimonial-text */
       
     
-    
+    /*Footer*/
+
+    .begrenzung-footer {
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    .link-logo-footer {
+      max-width: 120px;
+      height: auto;
+    }
+  
+    .menupunkt-footer {
+      font-size: var(--font-size-h2);
+    }
+  
+    .footer-shop {
+      padding-bottom: 120px;
+    }
+  
+    .menu-footer {
+      gap: 50px;
+    }
  
    
      

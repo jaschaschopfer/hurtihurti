@@ -82,12 +82,15 @@ h4 {
     font-size: var(--font-size-h4);
 }
 
-body {
-    background-color: var(--color-white);
+/*header*/
+.header {
+    margin-top: var(--margin-L);
+    margin-bottom: var(--margin-L);
 }
 
 .link-logo-header {
-    width: 40%;
+    max-width: 150px;
+    height: auto;
 }
 
 .logo-header {
@@ -95,14 +98,16 @@ body {
 }
 
 #iconwarenkorbheader {
-    height: 1.5rem;
-}
+    height: var(--font-size-h3);
+    /* Anpassung, damit auf gleicher Höhe wie Schrift */
+    padding-top: 5px;
+  }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-
-
 
 .navigation {
     color: var(--color-white);
@@ -111,6 +116,7 @@ body {
     text-align: left;
 
     flex: 1 0 auto;
+    justify-content: flex-end;
 }
 
 .nav_inhalt {
@@ -132,22 +138,31 @@ body {
 }
 
 .menupunkt {
-    font-size: var(--font-size-h4);
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: var(--font-size-h3);
     margin-left: 10px;
     color: var(--color-black);
 }
+
+.menupunkt-shop {
+    color: var(--color-orange);
+}
+
+
+
 
 body {
     background-color: var(--color-white);
     color: var(--color-black);
     margin: 20px;
-
 }
 
 .vorstellung {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--gap-S);
 }
 
 
@@ -159,7 +174,6 @@ body {
     width: 100%;
     object-fit: fill;
 }
-
 
 .person {
     background-color: var(--color-black);
@@ -178,40 +192,38 @@ body {
 }
 
 
-
 /*ab hier kopieren für Footer*/
+
+
 
 .footer {
     background-color: var(--color-black);
     margin: 0;
     padding: 20px;
+
 }
 
 .link-logo-footer {
-    width: 15%;
+    max-width: 70px;
+    height: auto;
 }
+
 
 .logo-footer {
     width: 100%;
     align-self: flex-start;
 }
 
-
 .shop-warenkorb {
     color: var(--color-orange);
     display: flex;
-    /* Auflistung horizontal */
     justify-content: flex-end;
-    /* Verteilung */
     align-content: center;
-    /* Umbruch, wenn zu wenig Platz*/
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
-    /* Keine Aufführungspunkte*/
-    /* Kein Padding für die ganze Leiste*/
     margin: 0px;
-    /* Keine Margin für die ganze Leiste*/
+    padding-top: 5px;
     height: 100%;
 }
 
@@ -220,7 +232,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .navigation-footer {
@@ -231,25 +243,28 @@ body {
 }
 
 .menupunkt-footer {
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: var(--font-size-h3);
+
     color: var(--color-white);
     justify-content: center;
-
 }
 
-.menü-footer {
+.menupunkt-footer-shop {
+    color: var(--color-orange);
+}
+
+.menu-footer {
     display: flex;
-    /* Auflistung horizontal */
     justify-content: left;
-    /* Verteilung */
     align-content: center;
-    /* Umbruch, wenn zu wenig Platz*/
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     list-style: none;
-    /* Keine Aufführungspunkte*/
     padding: 0px;
     margin: 0px;
-    /* Keine Margin für die ganze Leiste*/
     height: 100%;
 }
 
@@ -263,5 +278,5 @@ hr {
     color: var(--color-white);
     padding-top: 0;
     font-size: var(--font-size-small);
-    text-decoration: none; 
+    text-decoration: none;
 }
