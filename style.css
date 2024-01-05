@@ -191,7 +191,6 @@ nav {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: var(--gap-S);
 }
 
@@ -243,13 +242,14 @@ nav {
 
 .teaser-gross-textbox-mit-button {
   margin: var(--margin-M);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.teaser-gross-textbox {
-  margin: var(--margin-M);
-  /* damit Text nicht in .buttongross hinein läuft */
-  margin-bottom: calc( var(--padding-button) * 4);
+.buttongross-container {
+  display: flex;
+  justify-content: end;
 }
 
 .teaser-gross img {
@@ -259,13 +259,14 @@ nav {
   object-position:center;
 }
 
+
 .buttongross {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   background-color: var(--color-orange);
   padding: var(--padding-button);
   color: var(--color-black);
+  font-weight: 900;
+  font-size:var(--font-size-button-S);
+  font-style: italic;
 }
 
 .usp {
@@ -310,6 +311,10 @@ nav {
   background-color: var(--color-orange);
   padding: var(--padding-button);
   color: var(--color-black);
+
+  font-weight: 900;
+  font-size:var(--font-size-button-S);
+  font-style: italic;
 }
 
 .testimonial-block-mit-titel {

@@ -1,137 +1,156 @@
 @media screen and (min-width:  810px){
 
-    :root{
-        --margin-S: 10px;
-        
+  :root{
+      --margin-S: 10px;
+      
 
-        /* gemäss Figma */
-        --margin-M: 25px;
-        --margin-L: 80px;
-        --padding-L: 80px;
-        --column-width: 415px;
+      /* gemäss Figma */
+      --margin-M: 25px;
+      --margin-L: 80px;
+      --padding-L: 80px;
+      /* kleiner als Figma, da sonst zu früh umbricht */
+      --column-width: 400px;
 
-        /* gemäss CD/CI */
-        --padding-button: 30px;
-        
-        /* gemäss Figma 19px (aufgerundet auf 20px)*/
-        --gap-S: 20px;
+      /* gemäss CD/CI */
+      --padding-button: 30px;
+      
+      /* gemäss Figma 19px (aufgerundet auf 20px)*/
+      --gap-S: 20px;
 
-        --border-s: 0.2rem solid var(--color-black);
+      --border-s: 0.2rem solid var(--color-black);
 
-        --font-size-h1: 3.33rem;
-        --font-size-h2: 2.22rem;
-        --font-size-h3: 1.39rem;
-        --font-size-h4: 1.39rem;
-        --font-size-default: 1rem;
-        --font-size-small: 0.77rem;
-        --font-size-button-L: 1.39rem;
-        --font-size-button-S: 1.11rem;
-     
-        --color-black: #191919;
-        --color-orange: #E5B100;
-        --color-white: #F4F4F4;
-     
-    }
+      --font-size-h1: 3.33rem;
+      --font-size-h2: 2.22rem;
+      --font-size-h3: 1.39rem;
+      --font-size-h4: 1.39rem;
+      --font-size-default: 1rem;
+      --font-size-small: 0.77rem;
+      --font-size-button-L: 1.39rem;
+      --font-size-button-S: 1.11rem;
+    
+      --color-black: #191919;
+      --color-orange: #E5B100;
+      --color-white: #F4F4F4;
+    
+  }
 
-    * {
-      font-size: 18px;
-    }
-    
+  * {
+    font-size: 18px;
+  }
 
-    /* .headerbild */
+  header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+
+  }
+  
+
+  /* .headerbild */
+  
+  .headerlogo {
+    height: 25%;
+  }
+  
+  nav {
+    padding-right: 110px;
+  }
+  
+  .nav_links {
+    gap: 100px;
+  }
+  
+  
+  /* .menupunkt  */
+  
+  /* #iconwarenkorbheader  */
+  
+  .teaser-shop {
+    margin: var(--margin-L);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teaser-shop-artikel {
+    /* width 30% damit alle gleich breit sind */
+    width: 30%;
+    /* min-width damit content platz hat und flex umbricht */
+    min-width: var(--column-width);
+  }
+  
+  
+  /* .titelpreis */
+  
+  /* .artikelbeschreibung  */
     
-    .headerlogo {
-      height: 25%;
-    }
+  /* .teaser-shop-artikel-bild  */
+  
+  /* .iconwarenkorbshopteaser  */
+  
+  .teaser-gross {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: var(--margin-L);
+    margin-bottom: var(--margin-L);
     
-    nav {
-      padding-right: 110px;
-    }
-    
-    .nav_links {
-      gap: 100px;
-    }
-    
-    
-    /* .menupunkt  */
-    
-    /* #iconwarenkorbheader  */
-    
-    .teaser-shop {
+  }
+  
+  /* .teaser-gross-textbox  */
+  
+  /* .teaser-gross img  */
+  
+  /* .buttongross  */
+
+  .usp {
+    flex-direction: row;
+    justify-content: center;
+    margin: var(--margin-L);
+  }
+  
+  .usp h3 {
+    max-width: var(--column-width);
+  }
+  
+  .social-wall {
+    margin: var(--margin-L);
+  }
+  
+  /* .h2-aufweiss  */
+  
+  /* .buttongross-center-container  */
+  
+  /* .buttongross-center  */
+  
+  .testimonial-block-mit-titel {
       margin: var(--margin-L);
+  }
+    
+  /* .testimonial-block-mit-titel h2 */
+    
+  .testimonial-block {
       flex-direction: row;
       flex-wrap: wrap;
-    }
-    
-    .teaser-shop-artikel {
-      width: var(--column-width);
-    }
-    
-    
-    /* .titelpreis */
-    
-    /* .artikelbeschreibung  */
-      
-    /* .teaser-shop-artikel-bild  */
-    
-    /* .iconwarenkorbshopteaser  */
-    
-    .teaser-gross {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-    }
-    
-    /* .teaser-gross-textbox  */
-    
-    /* .teaser-gross img  */
-    
-    /* .buttongross  */
-
-    .usp {
-      flex-direction: row;
       justify-content: center;
-      margin: var(--margin-L);
-      /* Versuch, content so breit zu gestalten wie teaser oben */
-      /* max-width: calc((3 * var(--column-width)) + (2 * var(--gap-S))); */
-    }
+  }
     
-    .usp h3 {
-      max-width: var(--column-width);
-    }
+  .testimonial {
+    width: 30%;
+    min-width: var(--column-width);
+  }
     
-    .social-wall {
-      margin: var(--margin-L);
-    }
+  /* .sterne-bestellnummer  */
     
-    /* .h2-aufweiss  */
+  /* .sterne  */
     
-    /* .buttongross-center-container  */
+  /* .bestellnummer p */
     
-    /* .buttongross-center  */
-    
-    .testimonial-block-mit-titel {
-        margin: var(--margin-L);
-    }
-      
-    /* .testimonial-block-mit-titel h2 */
-      
-    .testimonial-block {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-      
-    .testimonial {
-      width: var(--column-width);
-    }
-      
-    /* .sterne-bestellnummer  */
-      
-    /* .sterne  */
-      
-    /* .bestellnummer p */
-      
-    /* .testimonial-text */
+  /* .testimonial-text */
       
     
     
