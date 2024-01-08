@@ -135,8 +135,8 @@ nav {
     color: var(--color-white);
     background-color: var(--color-black);
     padding: 15px;
+    padding-right: var(--margin-M);
     text-align: center;
-    margin: 0px;
 }
 
 .menupunkt-shop {

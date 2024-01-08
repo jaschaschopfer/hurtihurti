@@ -58,7 +58,7 @@
   }
   
   nav {
-    padding-right: 110px;
+    padding-right: var(--margin-L);
   }
   
   .nav_links {
