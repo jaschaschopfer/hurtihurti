@@ -8,8 +8,9 @@
         --margin-M: 25px;
         --margin-L: 80px;
         --padding-L: 80px;
-        --column-width: 415px;
-
+        /* kleiner als Figma, da sonst zu früh umbricht */
+        --column-width: 400px;
+  
         /* gemäss CD/CI */
         --padding-button: 30px;
         
@@ -36,10 +37,16 @@
     * {
       font-size: 18px;
     }
-
-    .begrenzung-header {
+  
+    header {
       max-width: 1440px;
       margin: 0 auto;
+    }
+  
+    main {
+      max-width: 1440px;
+      margin: 0 auto;
+  
     }
   
     .link-logo-header {
@@ -71,7 +78,10 @@
     }
 
     .karte {
-        max-width: var(--column-width);
+      /* width 32.25% damit es mit gap zusammen gleich 100% gibt*/
+      width: 32.25%;
+      /* min-width damit content platz hat und flex umbricht */
+      /* min-width: var(--column-width); */
     }
 
     

@@ -210,7 +210,6 @@ background-color: var(--color-white);
   }
 
 .o-no-wichtig-einzel {
-    padding: var(--margin-M);
     min-height: 250px;
     display: flex;
     flex-direction: column;
@@ -221,6 +220,10 @@ background-color: var(--color-white);
 
     color: var(--color-orange);
     margin: 0;
+}
+
+.o-no-wichtig-infos {
+  margin: var(--margin-M);
 }
 
 
@@ -237,11 +240,15 @@ background-color: var(--color-white);
     font-weight: 900;
     font-size:var(--font-size-button-S);
     font-style: italic;
+    margin-bottom: var(--margin-M);
+    margin-right: var(--margin-M);
   }
 
   .gots {
     height: 70px;
     object-fit: cover;
+    margin-bottom: var(--margin-M);
+    margin-right: var(--margin-M)
   }
 
   
