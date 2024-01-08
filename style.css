@@ -4,7 +4,7 @@
    --margin-L: 40px;
    --padding-L: 10px;
 
-   --padding-button: 15px;
+   --padding-button: 8px;
 
    --gap-S: 10px;
 
@@ -324,6 +324,7 @@ nav {
   margin-top: var(--margin-L);
   margin-left: var(--margin-M);
   margin-right: var(--margin-M);
+  margin-bottom: var(--margin-L);
 }
 
 .testimonial-block-mit-titel h2{

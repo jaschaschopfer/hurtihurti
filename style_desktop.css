@@ -12,7 +12,7 @@
       --column-width: 400px;
 
       /* gemäss CD/CI */
-      --padding-button: 30px;
+      --padding-button: 10px;
       
       /* gemäss Figma 19px (aufgerundet auf 20px)*/
       --gap-S: 20px;
