@@ -85,6 +85,7 @@ h4 {
 
 .logo-header {
   width: 100%;
+  margin-left: var(--margin-M);
 }
 
 #iconwarenkorbheader {
@@ -155,12 +156,11 @@ h4 {
 
 body {
   background-color: var(--color-white);
+  margin: 0px;
 }
 
 .section-mit-titel {
-  display: flex;
-  flex-direction: column;
-  margin-top: var(--margin-L);
+  margin-top: 0px;
   margin-left: var(--margin-M);
   margin-right: var(--margin-M);
 }

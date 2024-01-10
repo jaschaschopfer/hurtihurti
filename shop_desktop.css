@@ -75,6 +75,7 @@
 
     .section-mit-titel {
         margin: var(--margin-L);
+        margin-top: 0px;
     }
 
     .karte {

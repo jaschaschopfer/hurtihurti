@@ -99,11 +99,14 @@ h4 {
 
 body {
   background-color: var(--color-white);
+  margin: 0px;
   }
 
 .headerbildundlogo {
   position: relative;
   margin: 0px;
+  height: calc(100vw/2);
+  max-height: calc(1440px/2);
 }
 
 .headerbild {

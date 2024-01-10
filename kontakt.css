@@ -48,6 +48,7 @@
 
 .logo-header {
   width: 100%;
+  margin-left: var(--margin-M);
 }
 
 #iconwarenkorbheader {
