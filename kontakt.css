@@ -1,29 +1,29 @@
 :root{
-    --margin-S: 5px;
-    --margin-M: 12px;
-    --margin-L: 40px;
-    --padding-L: 10px;
-    
-    --padding-button: 8px;
-    
-    --gap-S: 10px;
-    
-    --border-s: 0.1rem solid var(--color-black);
-    
-    --font-size-h1: 3.33rem;
-    --font-size-h2: 2.22rem;
-    --font-size-h3: 1.39rem;
-    --font-size-h4: 1.39rem;
-    --font-size-default: 1rem;
-    --font-size-small: 0.77rem;
-    --font-size-button-L: 1.39rem;
-    --font-size-button-S: 1.11rem;
-    
-    --color-black: #191919;
-    --color-orange: #E5B100;
-    --color-white: #F4F4F4;
-    
-    }
+  --margin-S: 5px;
+  --margin-M: 12px;
+  --margin-L: 40px;
+  --padding-L: 10px;
+
+  --padding-button: 8px;
+
+  --gap-S: 10px;
+
+  --border-s: 0.1rem solid var(--color-black);
+
+  --font-size-h1: 3.33rem;
+  --font-size-h2: 2.22rem;
+  --font-size-h3: 1.39rem;
+  --font-size-h4: 1.39rem;
+  --font-size-default: 1rem;
+  --font-size-small: 0.77rem;
+  --font-size-button-L: 1.39rem;
+  --font-size-button-S: 1.11rem;
+
+  --color-black: #191919;
+  --color-orange: #E5B100;
+  --color-white: #F4F4F4;
+
+}
 
 * {
     font-family: Komet;
@@ -103,6 +103,8 @@
   color: var(--color-orange);
 }
 
+
+/*body*/
 h1 {
     
     font-style: bold;
@@ -114,24 +116,28 @@ body {
 
      margin: 0;
      padding: 0;
-     display: flex;
      justify-content: center;
      align-items: center;
      height: 100vh;
+     background-color: var(--color-white);
 
 }
 
-.container {
+.container-kontakt {
+  margin-left: var(--margin-M);
+  margin-right: var(--margin-M);
+  margin-bottom: 100px;
 
-        width: 400px;
-        padding: 20px;
-        border-radius: 8px
-        
+}
+
+.kontakt {
+  display: flex;
+  justify-content: center;
 }
 
 .form-group {
         margin-bottom: 15px;
-       
+        
 
 }
 
@@ -158,24 +164,22 @@ textarea {
 
 
 
-button {
+.button {
 
-    width: 40%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    background-color: #E5B100;
-    cursor: pointer;
-    font-weight: bold;
-    
-}
-
-.kontakt form {
-        display: flex;
-        flex-direction: column;
+    background-color: var(--color-orange);
+    padding: var(--padding-button);
+    color: var(--color-black);
+    font-weight: 900;
+    font-size:var(--font-size-button-S);
+    font-style: italic;
 
 }
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+ }
 
 
 .form-group-checkbox {
@@ -183,6 +187,7 @@ button {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        margin-top: 10px;
 
 }
 
