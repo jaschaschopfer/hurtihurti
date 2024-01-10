@@ -104,7 +104,8 @@
 }
 
 
-/*body*/
+/*main*/
+
 h1 {
   /* Komet Black Italic */
   font-family: "komet", sans-serif;
@@ -115,45 +116,42 @@ h1 {
 }
 
 body {
-
      margin: 0;
-     padding: 0;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
      background-color: var(--color-white);
-
 }
 
 .container-kontakt {
   margin-left: var(--margin-M);
   margin-right: var(--margin-M);
-  margin-bottom: 100px;
+  margin-bottom: var(--margin-L);
 
 }
 
 .kontakt {
   display: flex;
+  /* zentriert die ganze Kontaktbox mittig */
   justify-content: center;
 }
 
-.form-group {
-        margin-bottom: 15px;
-        
-
-}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-S);
+ }
 
 label {
-
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: var(--margin-S);
+    /* Komet Black Italic */
+    font-family: komet, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  
+    font-size: var(--font-size-h3);
 
 
 }
 
-input [type="text"]
-input [type="email"]
 textarea {
 
     width: calc (100% - 16px);
@@ -178,12 +176,6 @@ textarea {
 }
 
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
- }
-
-
 .form-group-checkbox {
 
         display: flex;
@@ -206,45 +198,6 @@ label [for="newsletterCheckbox"] {
 
 
 
-
-@media (min-width: 576px) {
-
-    .container {
-        width: 80%;
-
-    }
-}
-
-
-@media (min-width: 768px)
-
-{
-
-    .container {
-        width: 70%;
-
-    }
-
-}
-
-@media (min-width: 992px) {
-
-    .container {
-        width: 60%;
-
-    }
-
-}
-
-@media (min-width: 1200px) {
-
-    .container {
-
-        width: 50%;
-
-
-    }
-}
 
 /*Footer*/
 
