@@ -139,9 +139,6 @@ nav {
     text-align: center;
 }
 
-.menupunkt-shop {
-  color: var(--color-orange);
-}
 
 .nav_links {
   display: flex;
@@ -170,11 +167,27 @@ nav {
   font-style: italic;
 }
 
-.iconwarenkorbheader {
+.icon-warenkorb-header {
   height: var(--font-size-h3);
   /* Anpassung, damit auf gleicher Höhe wie Schrift */
-  padding-top: 5px;
+  padding-top: 2px;
 }
+
+.hover-warenkorb-header img:nth-child(2){
+  display: none ;
+}
+
+.hover-warenkorb-header:hover img:nth-child(1){
+  display: none;
+}
+
+.hover-warenkorb-header:hover img:nth-child(2) {
+  display: block;
+}
+.menupunkt:hover { 
+  color: var(--color-orange);
+}
+
 
 
 
@@ -424,7 +437,28 @@ nav {
   justify-content: center;
 }
 
-.menupunkt-footer-shop {
+.warenkorb-footer {
+  height: var(--font-size-h3);
+  padding-top: 12px;
+
+}
+.hover-warenkorb-footer img:nth-child(2){
+  display: none ;
+}
+
+.hover-warenkorb-footer:hover img:nth-child(1){
+  display: none;
+}
+
+.hover-warenkorb-footer:hover img:nth-child(2) {
+  display: block;
+}
+
+.menupunkt-footer:hover { 
+  color: var(--color-orange);
+}
+
+.menupunkt-aktiv-footer{
   color: var(--color-orange);
 }
 
