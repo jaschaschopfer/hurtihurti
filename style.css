@@ -170,7 +170,7 @@ nav {
   font-style: italic;
 }
 
-#iconwarenkorbheader {
+.iconwarenkorbheader {
   height: var(--font-size-h3);
   /* Anpassung, damit auf gleicher Höhe wie Schrift */
   padding-top: 5px;
@@ -403,7 +403,7 @@ nav {
   padding-bottom: 60px;
 }
 
-#iconwarenkorbheader {
+.iconwarenkorbfooter {
   height: 23px;
 }
 
@@ -442,7 +442,7 @@ nav {
 
 hr {
   width: auto;
-  height: 0.5 px;
+  height: 0.5px;
   background-color: var(--color-white);
 }
 
