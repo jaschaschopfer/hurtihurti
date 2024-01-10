@@ -25,6 +25,24 @@
 
 }
 
+h1 {
+  /* Komet Black Italic */
+  font-family: "komet", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  /* Komet Black Italic */
+  font-family: komet, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+
+  font-size: var(--font-size-h2);
+}
+
 * {
   /* Komet Regular */
   font-family: "komet", sans-serif;
@@ -38,6 +56,7 @@
 
 body {
   background-color: var(--color-white);
+  margin: 0;
   }
 
 /*header*/

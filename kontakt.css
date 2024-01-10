@@ -104,6 +104,8 @@
 }
 
 
+
+
 /*main*/
 
 h1 {
@@ -128,15 +130,17 @@ body {
 }
 
 .kontakt {
-  display: flex;
-  /* zentriert die ganze Kontaktbox mittig */
-  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: var(--gap-S);
+  justify-content: center;
+  margin-bottom: 30px;
  }
 
 label {
@@ -146,56 +150,28 @@ label {
     font-family: komet, sans-serif;
     font-weight: 900;
     font-style: italic;
-  
     font-size: var(--font-size-h3);
 
 
 }
 
-textarea {
+input {
+width: 100%;
+}
 
-    width: calc (100% - 16px);
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px;
-    box-sizing: border-box;
+textarea {
+  width: 100%;
 }
 
 
-
 .button {
-
     background-color: var(--color-orange);
     padding: var(--padding-button);
     color: var(--color-black);
     font-weight: 900;
     font-size:var(--font-size-button-S);
     font-style: italic;
-
 }
-
-
-.form-group-checkbox {
-
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-
-}
-
-#newsletterCheckbox {
-
-        margin-right: 10px;
-
-}
-
-label [for="newsletterCheckbox"] {
-        font-size: 14px;
-
-    }
-
 
 
 

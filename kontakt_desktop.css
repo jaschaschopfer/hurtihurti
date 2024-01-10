@@ -73,7 +73,10 @@
     margin-right: var(--margin-L);
     margin-left: var(--margin-L);
   }
- 
+
+.kontakt {
+  width: 500px; 
+}
 
   
  /*Footer*/
