@@ -4,7 +4,7 @@
    --margin-L: 40px;
    --padding-L: 10px;
 
-   --padding-button: 15px;
+   --padding-button: 8px;
 
    --gap-S: 10px;
 
@@ -135,8 +135,8 @@ nav {
     color: var(--color-white);
     background-color: var(--color-black);
     padding: 15px;
+    padding-right: var(--margin-M);
     text-align: center;
-    margin: 0px;
 }
 
 .menupunkt-shop {
@@ -170,7 +170,7 @@ nav {
   font-style: italic;
 }
 
-#iconwarenkorbheader {
+.iconwarenkorbheader {
   height: var(--font-size-h3);
   /* Anpassung, damit auf gleicher Höhe wie Schrift */
   padding-top: 5px;
@@ -324,6 +324,7 @@ nav {
   margin-top: var(--margin-L);
   margin-left: var(--margin-M);
   margin-right: var(--margin-M);
+  margin-bottom: var(--margin-L);
 }
 
 .testimonial-block-mit-titel h2{
@@ -402,7 +403,7 @@ nav {
   padding-bottom: 60px;
 }
 
-#iconwarenkorbheader {
+.iconwarenkorbfooter {
   height: 23px;
 }
 
@@ -441,7 +442,7 @@ nav {
 
 hr {
   width: auto;
-  height: 0.5 px;
+  height: 0.5px;
   background-color: var(--color-white);
 }
 

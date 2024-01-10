@@ -13,6 +13,7 @@
     --margin-L: 80px;
     --padding-L: 80px;
     --column-width: 415px;
+    --padding-button: 8px;
 
     /* gemäss CD/CI */
     --padding-button: 30px;

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" type="text/css" href="kontakt.css">
+    <link rel="stylesheet" type="text/css" href="kontakt_desktop.css">
+    <link rel="stylesheet" href="https://use.typekit.net/snk3rdm.css">
 </head>
 
 
 
 <body>
     <header class="begrenzung-header">
-
         <div class="header">   
             <div class="link-logo-header">
                 <a href="index.html"><img src="/images/Logo/hurtihurti/Logo_mit_claim.png" alt="Logo hurtihurti"
@@ -22,57 +23,34 @@
                 <ul class="nav_inhalt">
                     <li> <a class="menupunkt" href="ueberuns.html" class="menüpunkt">über üs</a> </li>
                     <li> <a class="menupunkt menupunkt-shop" href="shop.html">shop</a></li>
-                    <li> <a class="menupunkt" href="shop.html"><img src="images/Icons/Warenkorb/warenkorb_gelb.png" alt=""
-                                id="iconwarenkorbheader"></a></li>
+                    <li> <a class="menupunkt" href="shop.html"><img src="images/Icons/Warenkorb/warenkorb_gelb.png" alt="" id="iconwarenkorbheader"></a></li>
                 </ul>
             </nav> 
         </div> 
-        
-        </header>
+    </header>
 
-    <div class="container">
-
-        
-
-    
- 
-
-    <div class="kontakt">
-        <h1>kontakt</h1>
-    <form id="contact-form">
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder=" Max Muster" required>
-      </div>
-      <div class="form-group">
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" placeholder="maxmuster@gmail.com" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Nachricht:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Liebes hurtihurti Team..." required></textarea>
-      </div>
-      <div class="form-group-checkbox">
-      <input type="checkbox" id="newsletterCheckbox" value="AGB akzeptieren"
-      <label for="newsletterCheckbox">AGB akzeptieren </label>  
-      </div>
-      <button type="submit">hurti kontaktieren</button> 
-
-
-
-
-
-
-    </form>
-        
-            
-
-        
-
-    </div>
-
-
-</body>
+    <main>
+        <section class="container-kontakt">
+            <h1>kontakt</h1>
+            <div class="kontakt">
+                <form class="contact-form">
+                    <article class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder=" Max Muster" required>
+                    </article>
+                    <article class="form-group">
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="maxmuster@gmail.com" required>
+                    </article>
+                    <article class="form-group">
+                        <label for="message">Nachricht:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Liebes hurtihurti Team..." required></textarea>
+                    </article>
+                </form>
+                <a href="#" type="submit" class="button">hurti kontaktieren</a> 
+            </div>
+        </section>
+    </main>
 
 
 <footer class="footer">
@@ -111,14 +89,5 @@
   </div>
   
   </footer>
-
-
-
-
-
-
-
-
-
-
+</body>
 </html>
