@@ -169,6 +169,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--gap-S);
+  padding-bottom: var(--margin-L)
 }
 
 .karte {
@@ -241,6 +242,7 @@ body {
 }
 
 
+
 .buttongross-container {
   display: flex;
   justify-content: end;
@@ -264,6 +266,7 @@ body {
   margin-bottom: var(--margin-M);
   margin-right: var(--margin-M)
 }
+
 
 
 /*Footer*/

@@ -94,6 +94,13 @@ h4 {
 }
 
 /*header*/
+
+.begrenzung-main{
+    margin: var(--margin-S)
+
+}
+
+
 .header {
     margin-top: var(--margin-L);
     margin-bottom: var(--margin-L);
