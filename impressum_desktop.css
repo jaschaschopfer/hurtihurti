@@ -1,72 +1,119 @@
 @media screen and (min-width:  810px){
 
+  :root{
+    --margin-S: 10px;
     
-h1 {
-    font-style: bold;
-    font-size: 3.75rem;
-    text-align:left;
+
+    /* gemäss Figma */
+    --margin-M: 25px;
+    --margin-L: 80px;
+    --padding-L: 80px;
+    /* kleiner als Figma, da sonst zu früh umbricht */
+    --column-width: 400px;
+
+    /* gemäss CD/CI */
+    --padding-button: 10px;
+    
+    /* gemäss Figma 19px (aufgerundet auf 20px)*/
+    --gap-S: 20px;
+
+    --border-s: 0.2rem solid var(--color-black);
+
+    --font-size-h1: 3.33rem;
+    --font-size-h2: 2.22rem;
+    --font-size-h3: 1.39rem;
+    --font-size-h4: 1.39rem;
+    --font-size-default: 1rem;
+    --font-size-small: 0.77rem;
+    --font-size-button-L: 1.39rem;
+    --font-size-button-S: 1.11rem;
+  
+    --color-black: #191919;
+    --color-orange: #E5B100;
+    --color-white: #F4F4F4;
+  
+  }
+
+  * {
+    font-size: 18px;
+  }
+
+
+  .begrenzung-header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .link-logo-header {
+    max-width: 600px;
+    height: auto;
+
+  }
+
+  .nav_inhalt {
+    gap: 20px;
+  }
+
+  .link-logo-header {
+    max-width: 200px;
+  }
+
+  .menupunkt {
+    font-size: var(--font-size-h2);
+  }
+
+
+  /*body*/
+
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-right: var(--margin-L);
+    margin-left: var(--margin-L);
+    margin-bottom: var(--margin-L);
+  }
+
+  .flex-container {
  
- }
- 
- 
- 
- .flex-container {
- 
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         margin-left: 20px;
-         flex-wrap: wrap;
- }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
 
- .begrenzung-header {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.link-logo-header {
-  max-width: 600px;
-  height: auto;
-
-}
-
-.nav_inhalt {
-  gap: 20px;
-}
-
-.link-logo-header {
-  max-width: 200px;
-}
-
-.menupunkt {
-  font-size: var(--font-size-h2);
-}
+  .spalte {
+    width: 32.25%;
+    max-width: var(--column-width);
+  }
 
 
-/*Footoer*/
+  /*Footoer*/
 
-.begrenzung-footer {
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-}
+  .begrenzung-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.link-logo-footer {
-  max-width: 120px;
-  height: auto;
-}
+  .link-logo-footer {
+    max-width: 120px;
+    height: auto;
+  }
 
-.menupunkt-footer {
-  font-size: var(--font-size-h2);
-}
+  .menupunkt-footer {
+    font-size: var(--font-size-h2);
+  }
 
-.footer-shop {
-  padding-bottom: 120px;
-}
+  .footer-shop {
+    padding-bottom: 120px;
+  }
 
-.menu-footer {
-  gap: 50px;
-}
+  .menu-footer {
+    gap: 50px;
+  }
 
 
 }
