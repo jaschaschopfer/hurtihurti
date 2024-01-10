@@ -106,10 +106,12 @@
 
 /*body*/
 h1 {
-    
-    font-style: bold;
-    font-size: 3.75rem;
-    text-align:left;
+  /* Komet Black Italic */
+  font-family: "komet", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+
+  font-size: var(--font-size-h1);
 }
 
 body {
