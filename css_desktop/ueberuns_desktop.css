@@ -134,9 +134,10 @@
     margin-right: auto;
   }
 
-  /*ab hier kopieren für Footer*/
 
-  .begrenzung-footer {
+   /*Footer*/
+
+   .begrenzung-footer {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
@@ -146,9 +147,11 @@
     max-width: 120px;
     height: auto;
   }
+
   .warenkorb-footer {
     padding-top: 12px;
   }
+
   .menupunkt-footer {
     font-size: var(--font-size-h2);
   }
