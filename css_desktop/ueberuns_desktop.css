@@ -80,7 +80,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: auto;
-    max-width: calc(3 * var(--column-width) + (2 * var(--gap-S)));
   }
 
   .vorstellung-1 {
