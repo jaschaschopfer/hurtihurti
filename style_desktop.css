@@ -167,6 +167,10 @@
       height: auto;
     }
   
+    .warenkorb-footer {
+      padding-top: 12px;
+    }
+
     .menupunkt-footer {
       font-size: var(--font-size-h2);
     }

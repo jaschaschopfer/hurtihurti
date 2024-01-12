@@ -9,11 +9,10 @@
     
 
     /* gemäss Figma */
-    --margin-M: 25px;
-    --margin-L: 80px;
-    --padding-L: 80px;
-    --column-width: 415px;
-    --padding-button: 8px;
+    --margin-S: 5px;
+    --margin-M: 12px;
+    --margin-L: 40px;
+    --padding-L: 10px;
 
     /* gemäss CD/CI */
     --padding-button: 30px;
@@ -37,14 +36,6 @@
     --color-white: #F4F4F4;
  
 }
-
-* {
-    font-family: Komet;
-    font-size: 15px;
-    text-decoration: none;
-
-}
-
 
 
 * {
@@ -93,97 +84,105 @@ h4 {
     font-size: var(--font-size-h4);
 }
 
+
+
 /*header*/
-
-.begrenzung-main{
-    margin: var(--margin-S)
-
-}
-
-
 .header {
-    margin-top: var(--margin-L);
-    margin-bottom: var(--margin-L);
+  margin-top: var(--margin-L);
+  margin-bottom: var(--margin-L);
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .link-logo-header {
-    max-width: 150px;
-    height: auto;
+  max-width: 200px;
+  height: auto;
+  padding-right: 20px;
 }
 
 .logo-header {
-    width: 100%;
-    margin-left: var(--margin-M);
+  width: 100%;
+  margin-left: var(--margin-M);
+ 
 }
 
-.icon-warenkorb-header {
-    height: var(--font-size-h3);
-    /* Anpassung, damit auf gleicher Höhe wie Schrift */
-    padding-top: 12px;
-  }
-
- .hover-warenkorb-header img:nth-child(2){
-    display: none ;
- }
-
-.hover-warenkorb-header:hover img:nth-child(1){
-    display: none;
+#iconwarenkorbheader {
+  height: var(--font-size-h3);
+  /* Anpassung, damit auf gleicher Höhe wie Schrift */
 }
 
-.hover-warenkorb-header:hover img:nth-child(2) {
-    display: block;
- }
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .navigation {
-    color: var(--color-white);
-    padding: 20px;
-    padding-top: 0;
-    text-align: left;
-
-    flex: 1 0 auto;
-    justify-content: flex-end;
+  color: var(--color-white);
+  padding-right: 20px;
+  text-align: left;
+  justify-content: flex-end;
+}
+ul{
+  padding-left: 0px;
 }
 
 .nav_inhalt {
-    display: flex;
-    /* Auflistung horizontal */
-    justify-content: flex-end;
-    /* Verteilung */
-    align-content: center;
-    /* Umbruch, wenn zu wenig Platz*/
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
-    /* Keine Aufführungspunkte*/
-    padding: 0px;
-    /* Kein Padding für die ganze Leiste*/
-    margin: 0px;
-    /* Keine Margin für die ganze Leiste*/
-    height: 100%;
+  display: flex;
+  /* Auflistung horizontal */
+  justify-content: flex-end;
+  /* Verteilung */
+  align-content: center;
+  /* Umbruch, wenn zu wenig Platz*/
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  /* Keine Aufführungspunkte*/
+  margin: 0px;
+  /* Keine Margin für die ganze Leiste*/
+  height: 100%;
 }
 
 .menupunkt {
-    font-family: komet, sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: var(--font-size-h2);
-    margin-left: 10px;
-    color: var(--color-black);
+  font-family: komet, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--font-size-h3);
+  margin-left: 10px;
+  color: var(--color-black);
 }
 
+
+
+.icon-warenkorb-header {
+  height: var(--font-size-h3);
+  /* Anpassung, damit auf gleicher Höhe wie Schrift */
+  padding-top: 5px;
+}
+
+.hover-warenkorb-header img:nth-child(2){
+  display: none ;
+}
+
+.hover-warenkorb-header:hover img:nth-child(1){
+  display: none;
+}
+
+.hover-warenkorb-header:hover img:nth-child(2) {
+  display: block;
+}
 .menupunkt:hover { 
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
-
 
 .menupunkt-aktiv {
-    color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+
+  
+  /*main*/
+
+main {
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 
@@ -192,8 +191,7 @@ h4 {
 body {
     background-color: var(--color-white);
     color: var(--color-black);
-    margin: 0px;
-    
+    margin:0px;
 }
 
 .vorstellung {
@@ -241,15 +239,17 @@ body {
     padding: 20px;
 
 }
-
-.link-logo-footer {
-    max-width: 70px;
-    height: auto;
+.footer-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 
 .logo-footer {
-    width: 100%;
+    max-width: 70px;
+    height: auto;
     align-self: flex-start;
 }
 
@@ -267,12 +267,7 @@ body {
 }
 
 
-.footer-shop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 60px;
-}
+
 
 .navigation-footer {
     color: var(--color-white);
@@ -292,7 +287,7 @@ body {
 }
 .warenkorb-footer {
     height: var(--font-size-h3);
-    padding-top: 12px;
+    padding-top: 5px;
 
 }
 .hover-warenkorb-footer img:nth-child(2){

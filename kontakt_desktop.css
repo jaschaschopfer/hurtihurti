@@ -1,6 +1,9 @@
 @media screen and (min-width:  810px){
   :root{
-    --margin-S: 10px;
+    --margin-S: 5px;
+    --margin-M: 12px;
+    --margin-L: 40px;
+    --padding-L: 10px;
     
 
     /* gemäss Figma */
@@ -45,6 +48,8 @@
 
   /*Header*/
 
+
+
   .begrenzung-header {
     max-width: 1440px;
     margin: 0 auto;
@@ -54,6 +59,10 @@
     max-width: 600px;
     height: auto;
 
+  }
+
+  .icon-warenkorb-header {
+    padding-top: 15px;
   }
 
   .nav_inhalt {
@@ -91,7 +100,9 @@
     max-width: 120px;
     height: auto;
   }
-
+  .warenkorb-footer {
+    padding-top: 12px;
+  }
   .menupunkt-footer {
     font-size: var(--font-size-h2);
   }

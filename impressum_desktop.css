@@ -50,6 +50,9 @@
 
   }
 
+  .icon-warenkorb-header {
+    padding-top: 15px;
+  }
   .nav_inhalt {
     gap: 20px;
   }
@@ -101,6 +104,10 @@
   .link-logo-footer {
     max-width: 120px;
     height: auto;
+  }
+
+  .warenkorb-footer {
+    padding-top: 12px;
   }
 
   .menupunkt-footer {

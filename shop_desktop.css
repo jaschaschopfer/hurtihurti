@@ -52,7 +52,10 @@
     .link-logo-header {
       max-width: 600px;
       height: auto;
-  
+    }
+    
+    .icon-warenkorb-header {
+      padding-top: 15px;
     }
   
     .nav_inhalt {
@@ -94,6 +97,10 @@
     width: 100%;
   }
 
+  .warenkorb-footer {
+    padding-top: 12px;
+  }
+  
   .link-logo-footer {
     max-width: 120px;
     height: auto;

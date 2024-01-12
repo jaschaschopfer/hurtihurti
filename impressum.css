@@ -63,38 +63,38 @@ body {
 .header {
   margin-top: var(--margin-L);
   margin-bottom: var(--margin-L);
-}
 
-.link-logo-header {
-  max-width: 150px;
-  height: auto;
-}
-
-.logo-header {
-  width: 100%;
-  margin-left: var(--margin-M);
-}
-
-#iconwarenkorbheader {
-  height: var(--font-size-h3);
-  /* Anpassung, damit auf gleicher Höhe wie Schrift */
-  padding-top: 5px;
-}
-
-.header {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+.link-logo-header {
+  max-width: 200px;
+  height: auto;
+  padding-right: 20px;
+}
+
+.logo-header {
+  width: 100%;
+  margin-left: var(--margin-M);
+ 
+}
+
+#iconwarenkorbheader {
+  height: var(--font-size-h3);
+  /* Anpassung, damit auf gleicher Höhe wie Schrift */
+}
+
+
 .navigation {
   color: var(--color-white);
-  padding: 20px;
-  padding-top: 0;
+  padding-right: 20px;
   text-align: left;
-
-  flex: 1 0 auto;
   justify-content: flex-end;
+}
+ul{
+  padding-left: 0px;
 }
 
 .nav_inhalt {
@@ -108,8 +108,6 @@ body {
   gap: 10px;
   list-style: none;
   /* Keine Aufführungspunkte*/
-  padding: 0px;
-  /* Kein Padding für die ganze Leiste*/
   margin: 0px;
   /* Keine Margin für die ganze Leiste*/
   height: 100%;
@@ -124,10 +122,12 @@ body {
   color: var(--color-black);
 }
 
+
+
 .icon-warenkorb-header {
   height: var(--font-size-h3);
   /* Anpassung, damit auf gleicher Höhe wie Schrift */
-  padding-top: 12px;
+  padding-top: 5px;
 }
 
 .hover-warenkorb-header img:nth-child(2){
@@ -148,8 +148,6 @@ body {
 .menupunkt-aktiv {
   color: var(--color-orange);
 }
-
-
 
 
 
@@ -257,7 +255,7 @@ h2 {
 
 .warenkorb-footer {
   height: var(--font-size-h3);
-  padding-top: 12px;
+  padding-top: 5px;
 
 }
 .hover-warenkorb-footer img:nth-child(2){
