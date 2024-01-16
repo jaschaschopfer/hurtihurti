@@ -3,8 +3,8 @@
 
 ## Wie haben wir gearbeitet
 
-Jascha und Nick haben den Lead übernommen. Basierend auf dem CD/CI wurde das:root und die Unterseiten mit dazugehörigen HTML/CSS erstellt.
-Anschliessen haben wird die Unterseiten in der Gruppe aufgeteilt. Die einzelnen CSS ermöglichten es uns, simultan an der Website zu arbeiten. 
+Jascha und Nick haben den Lead übernommen. Basierend auf dem CD/CI wurde das :root und die Unterseiten mit dazugehörigen HTML/CSS erstellt.
+Anschliessend haben wird die Unterseiten in der Gruppe aufgeteilt. Die einzelnen CSS ermöglichten es uns, simultan an der Website zu arbeiten. 
 
 Wir haben den Mobile First Ansatz gewählt. 
 
@@ -27,7 +27,7 @@ HTML/CSS ist valide
 
 ## Was hat nicht geklappt
 
-Wir haben aufgrund der Verwendung von section/article anstatt div einige Warnungen im HTML-Validator, weil keine H2 zu erkennen sind. Für SEO ist das nicht optimal, wir haben uns dazu entschieden hier keine Anpassungen vorzunehmen. Grund dafür ist die Begrenzung auf eine Max Seitenbreite von 1440px im Main, welche dafür sorgt, dass die Seite auf breiteren Bildschirmen nicht verzogen, sondern mit weiss umgeben wird. Wenn wir die H2 aus der section/article genommen hätten, würde die Position nicht auf allen Seiten übereinstimmen. (Manchmal ist das H2 Teil eines Grids, manchmal Teil einer Flexbox). Durch den Validator sind wir darauf aufmerksam geworden, dass wir zukünftig jeden Titel mit in die Section nehmen, statt die Titel direkt in den Body zu schreiben.
+Wir haben aufgrund der Verwendung von section/article anstatt div einige Warnungen im HTML-Validator, weil keine H2 zu erkennen sind. Für SEO ist das nicht optimal, wir haben uns dazu entschieden hier keine Anpassungen vorzunehmen. Grund dafür ist die Begrenzung auf eine Max Seitenbreite von 1440px im Main, welche dafür sorgt, dass die Seite auf breiteren Bildschirmen nicht verzogen, sondern mit weiss umgeben wird. Wenn wir die H2 aus der section/article genommen hätten, würde die Position nicht auf allen Seiten übereinstimmen. (Manchmal ist das H2 Teil eines Grids, manchmal Teil einer Flexbox). Durch den Validator sind wir darauf aufmerksam geworden, dass wir zukünftig jeden Titel mit in die Section nehmen, statt die Titel direkt in den Body zu schreiben und die Titel so mit ihrem Content zusammen einzurücken bzw. in der Mitte der 1440px zu zentrieren.
 
 ## Hilfsmittel
 
@@ -47,6 +47,6 @@ Hier notieren was geklappt hat, was nicht, wie gearbeitet wurde, wo ChatGPT gebr
 
 ## Unsere Wünsche/Rückmeldung an die Dozierenden
 
-Schwierig war mit fünf Personen am Projekt zu arbeiten, weil alle den Code etwas anders verfassen. Hier waren wir zu Beginn etwas verloren und hätten uns mehr Input von den Dozierenden gewünscht. z.B. Wie entscheiden wir ob Flex/Grid in der Anwendung sinnvoller sind, Tipps für die Zusammenarbeit... Der Übergang vom Üben mit ZenGarden/IMP-News zum Coden an der eigenen Website war etwas zu sprunghaft. 
+Schwierig war mit fünf Personen am Projekt zu arbeiten, weil alle den Code etwas anders verfassen. Hier waren wir zu Beginn etwas verloren und hätten uns mehr Input von den Dozierenden gewünscht. z.B. Wie entscheiden wir ob Flex/Grid in der Anwendung sinnvoller sind, Tipps für die Zusammenarbeit, Tipps zum Start mit Webseite (bspw. wo braucht man welche Einheit (px, %, rem etc.), Mobile First/Desktop First Vor- und Nachteile, Tipps und Tricks wie root wurden erst im Coaching Thema). Der Übergang vom Üben mit ZenGarden/IMP-News zum Coden an der eigenen Website war etwas zu sprunghaft. 
 
 Nach einiger Zeit (und Fehlern) haben wir aber dennoch für das Meiste eigenständig eine Lösung gefunden. Die Tage an denen Dozierende vor Ort waren, war für uns sehr hilfreich, weil wir jederzeit und mehrmals Fragen stellen konnten. Online Coaching haben wir als weniger effektiv und zu kurz empfunden. 
